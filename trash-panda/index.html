@@ -1,0 +1,375 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../portfolio.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-white text-outerspace font-sans mx-40">
+    <div class="container m-auto">
+        <header>
+            <nav class="flex justify-between items-baseline">
+                <span class="text-2xl font-black">
+                    Lynn Baxter
+                </span>
+                <span class="flex text-md">
+                    <div class="flex-row mx-16">
+                        Work
+                    </div>
+                    <div>
+                        About
+                    </div>
+                </span>
+            </nav>
+        </header>
+        <main>
+            <span class="flex my-8">
+                <img class="w-1/4 mr-4" src="../images/trashpandastudy/tphero4.png">
+                <img class="w-1/4 mr-4" src="../images/trashpandastudy/tphero1.png">
+                <img class="w-1/4 mr-4" src="../images/trashpandastudy/tphero2.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tphero3.png">
+            </span>
+            <h1 class="text-4xl font-black">Trash Panda</h1>
+            </br>
+            <span class="flex flex-row">
+                <div>
+                    <p class="font-bold">Area of focus</p>
+                    <p>Using research to guide & focus the team</p>
+                    <p>Collaborating with different functions to create cohesive product</p>
+                    <p>Creating an executable design that the team can quickly iterate on</p>
+                </div>
+                <div>
+                    <p class="font-bold">Additional details</p>
+                    <p>8 weeks to deliver fully functional product</p>
+                    <p>Provided with a Product Vision to expand on</p>
+                    <p>Team included 2 designers, 4 data science partners, and 4 web devs</p>
+                </div>
+            </span>
+            </br>
+            <span>
+                <p class="font-bold">Problem:</p>
+                <p>Humans need to rethink how we are interacting with our environment. Creating better recycling habits
+                    will directly affect the world and how the future lives in it.</p>
+                <p class="font-bold">Solution:</p>
+                <p>Focus on reaching as large an audience as possible and help them to create better recycling habits.
+                </p>
+            </span>
+
+            </br>
+            <h3 class="font-bold text-lg text-bamboo">Discovery: Using research to refine how we can help</h3>
+            </br>
+            <p>Initially, we knew we wanted to work with Earth911. Their API would give us the data we needed to
+                create some kind of informational base to build from.</p>
+            </br>
+            <p class="font-bold">Data we could expect from Earth911:</p>
+            <ol class="list-decimal">
+                <li>Specific item descriptions. Items included plastic bottles, engine parts, household cleaners, etc.
+                </li>
+                <li>Location-based information on how each item is disposed of or recycled in that area.</li>
+                <li>Location-based information on specific disposal facilities that accept the item in question.</li>
+            </ol>
+            </br>
+            <p>My parter and I decided to start with analyzing the current competition.</p>
+            </br>
+            <img src="../images/trashpandastudy/competition1.png">
+            </br>
+            <p class="font-bold">Competition takeaways</p>
+            <ol class="list-decimal">
+                <li>In nearly all the competition, UX / UI was outdated and felt clunky and cluttered.
+                </li>
+                <li>All competitors failed to explain the what & why of what they were trying to accomplish.</li>
+                <li>Many of these companies were not utilizing current technology to create a better experience.</li>
+            </ol>
+            </br>
+            <h3 class="font-bold text-lg text-bamboo">Ideation: What could we build that promotes recycling?</h3>
+            </br>
+            <p>We knew that we needed to make sure we utilized current technology to help solve this problem and keep
+                younger users engaged with the product.</p>
+            </br>
+            <p>We wondered, what would happen if we enabled users to take a photo of an item in order to streamline the
+                process of locating the item details within our database?</p>
+            </br>
+            <p>Key insights from user interviews</p>
+            </br>
+            <p class="font-bold">Any amount of inaccuracy in the image recognition causes a significant amount of
+                distrust.</p>
+            <p>5 of the 6 people we spoke to reported they would not use the product if the image recognition accuracy
+                was below 80%.</p>
+            </br>
+            <p class="font-bold">Motivation to recycle is present, yet people are hard-pressed to change their habits.
+            </p>
+            <p>People are motivated to recycle in a myriad of ways - but not motivated enough to put a lot of energy
+                into helping themselves learn or create better habits.</p>
+            <span class="flex flex-row items-center">
+                <svg class="mx-4" width="84" height="84" viewBox="0 0 84 84" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M42.0639 18.1055C30.1749 18.1055 20.4617 27.8187 20.4617 39.7077C20.4617 45.9242 23.1814 51.9075 27.766 55.9482C31.1851 59.3673 30.8743 66.6716 30.7965 66.7493C30.7965 67.1378 30.8743 67.4487 31.1851 67.7595C31.4182 67.9926 31.8067 68.148 32.1175 68.148H51.9325C52.3211 68.148 52.6319 67.9926 52.865 67.7595C53.0981 67.5264 53.2535 67.1378 53.2535 66.7493C53.2535 66.6716 52.865 59.3673 56.2841 55.9482C56.3618 55.8705 56.4395 55.7928 56.5172 55.7151C61.0241 51.5967 63.6661 45.7687 63.6661 39.7077C63.6661 27.8187 53.9529 18.1055 42.0639 18.1055ZM54.4968 53.9279C54.4191 54.0056 54.2637 54.161 54.2637 54.2387C51.2332 57.5023 50.6892 62.864 50.6115 65.4283H33.4385C33.3608 62.864 32.8169 57.2692 29.5533 53.9279C25.4348 50.3534 23.026 45.1471 23.026 39.63C23.026 29.1397 31.4959 20.6698 41.9862 20.6698C52.4765 20.6698 60.9464 29.1397 60.9464 39.63C60.9464 45.1471 58.6152 50.3534 54.4968 53.9279Z"
+                        fill="#272B2A" />
+                    <path
+                        d="M41.9862 23.6226C41.2868 23.6226 40.6652 24.2442 40.6652 24.9436C40.6652 25.6429 41.2868 26.2646 41.9862 26.2646C49.8344 26.2646 56.1286 32.6364 56.1286 40.407C56.1286 41.1064 56.7503 41.728 57.4496 41.728C58.149 41.728 58.7706 41.1064 58.7706 40.407C58.8483 31.16 51.3109 23.6226 41.9862 23.6226Z"
+                        fill="#272B2A" />
+                    <path
+                        d="M50.6116 69.6245H33.3609C31.5737 69.6245 30.0973 71.1009 30.0973 72.8882C30.0973 74.6754 31.5737 76.1518 33.3609 76.1518H50.5339C52.3989 76.0741 53.8753 74.6754 53.8753 72.8882C53.8753 71.1009 52.3989 69.6245 50.6116 69.6245ZM50.6116 73.4321H33.3609C33.0501 73.4321 32.7393 73.199 32.7393 72.8105C32.7393 72.4219 32.9724 72.1888 33.3609 72.1888H50.5339C50.8447 72.1888 51.1556 72.4219 51.1556 72.8105C51.1556 73.199 50.9224 73.4321 50.6116 73.4321Z"
+                        fill="#272B2A" />
+                    <path
+                        d="M48.0473 77.4727H35.9251C34.1379 77.4727 32.6615 78.9491 32.6615 80.7363C32.6615 82.5235 34.1379 83.9999 35.9251 83.9999H48.0473C49.8345 83.9999 51.3109 82.5235 51.3109 80.7363C51.3109 78.8714 49.8345 77.4727 48.0473 77.4727ZM48.0473 81.2802H35.9251C35.6143 81.2802 35.3035 81.0471 35.3035 80.6586C35.3035 80.2701 35.5366 80.037 35.9251 80.037H48.0473C48.3581 80.037 48.6689 80.2701 48.6689 80.6586C48.6689 81.0471 48.3581 81.2802 48.0473 81.2802Z"
+                        fill="#272B2A" />
+                    <path
+                        d="M41.9862 11.6559C42.7632 11.6559 43.3072 11.0342 43.3072 10.3349V1.321C43.3072 0.621647 42.6855 0 41.9862 0C41.2868 0 40.6652 0.621647 40.6652 1.321V10.3349C40.6652 11.0342 41.2868 11.6559 41.9862 11.6559Z"
+                        fill="#272B2A" />
+                    <path
+                        d="M63.9769 6.6826C63.3553 6.21636 62.5782 6.44948 62.1897 6.99342L57.2165 14.4532C56.7503 15.0748 56.9057 15.9296 57.5273 16.3181C57.7605 16.4735 57.9936 16.5512 58.2267 16.5512C58.6929 16.5512 59.0815 16.3181 59.3146 15.9296L64.2877 8.46983C64.754 7.92589 64.5986 7.07113 63.9769 6.6826Z"
+                        fill="#272B2A" />
+                    <path
+                        d="M26.2119 16.2408C26.445 16.2408 26.6781 16.1631 26.9112 16.0076C27.5329 15.6191 27.6883 14.7643 27.2998 14.1427L22.482 6.60524C22.0935 5.98359 21.2387 5.82818 20.6171 6.21671C19.9954 6.60524 19.84 7.46 20.2285 8.08165L25.0463 15.6191C25.3571 16.0853 25.7457 16.2408 26.2119 16.2408Z"
+                        fill="#272B2A" />
+                    <path
+                        d="M16.8095 24.4773L8.96122 20.2035C8.33957 19.8927 7.48481 20.1258 7.17398 20.7474C6.78545 21.3691 7.01857 22.2238 7.71792 22.5347L15.5662 26.8085C15.7993 26.8862 15.9547 26.9639 16.1879 26.9639C16.6541 26.9639 17.1203 26.7308 17.3534 26.2645C17.6643 25.6429 17.4312 24.7881 16.8095 24.4773Z"
+                        fill="#272B2A" />
+                    <path
+                        d="M76.8761 20.7474C76.5652 20.1258 75.7105 19.8927 75.0888 20.2035L67.1628 24.4773C66.5412 24.7881 66.3081 25.6429 66.6189 26.2645C66.852 26.7308 67.3182 26.9639 67.7845 26.9639C68.0176 26.9639 68.2507 26.8862 68.4061 26.8085L76.3321 22.5347C76.9538 22.2238 77.1869 21.3691 76.8761 20.7474Z"
+                        fill="#272B2A" />
+                </svg>
+
+                <p>If we can’t guarantee 100% accuracy for image recognition, we need reliable fallbacks that the user
+                    can access with ease.</p>
+            </span>
+            </br>
+            <img src="../images/trashpandastudy/clickmodel.png">
+            </br>
+            <p>This model ensured that our users were never more than 3 taps away from the information they were looking
+                for.</p>
+            </br>
+            <h3 class="font-bold text-lg text-bamboo">Progression: Continuously asking our users what works</h3>
+            </br>
+            <span class="flex flex-row-reverse items-center">
+                <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                        <path
+                            d="M76.6862 32.8389L63.7985 16.0974C63.3214 15.4782 62.4514 15.3255 61.7917 15.7449L53.4709 21.0368H42.6186C42.4782 21.0368 42.3384 21.0668 42.2033 21.1061L33.7891 23.5282L25.0582 21.1402L16.5746 15.7449C15.9261 15.3325 15.0719 15.4723 14.5896 16.0704L0.334789 33.7272C-0.17748 34.3616 -0.0928848 35.2881 0.525127 35.8197L7.99649 42.2495L14.6994 51.2823C12.7391 53.3708 12.7773 56.6647 14.8169 58.7049C15.721 59.6085 16.8707 60.119 18.0533 60.2376C18.0122 60.5055 17.991 60.7775 17.991 61.0536C17.991 62.4788 18.5462 63.8188 19.5537 64.8263C20.5617 65.8344 21.9017 66.3896 23.3269 66.3896C23.3463 66.3896 23.3651 66.3884 23.3839 66.3878C23.3833 66.4242 23.3816 66.4601 23.3816 66.4965C23.3816 67.9217 23.9367 69.2617 24.9442 70.2698C25.9523 71.2773 27.2923 71.8324 28.7175 71.8324C28.9989 71.8324 29.2774 71.8095 29.5505 71.7672C29.6663 72.9539 30.1779 74.1088 31.085 75.0159C32.1248 76.0563 33.4912 76.5762 34.8577 76.5762C36.2241 76.5762 37.5905 76.0563 38.6309 75.0159L39.4469 74.1999L39.7894 74.476C40.821 75.4753 42.1604 75.9746 43.4998 75.9746C44.8663 75.9746 46.2327 75.4547 47.2725 74.4143C48.3341 73.3528 48.854 71.9517 48.8322 70.5576C50.2257 70.5788 51.6274 70.0594 52.6889 68.9985C53.7493 67.9375 54.2692 66.5376 54.2487 65.1441C55.7003 65.167 57.0773 64.6095 58.1048 63.5821C59.1663 62.5205 59.6862 61.1194 59.6645 59.7254C61.0591 59.7465 62.4596 59.2272 63.5212 58.1657C65.3329 56.3539 65.5661 53.5535 64.2226 51.4862L69.1168 41.2361L76.4748 34.9045C77.0828 34.381 77.1756 33.474 76.6862 32.8389ZM16.0917 19.0165L22.192 22.8955L8.92174 39.0625L3.60402 34.4856L16.0917 19.0165ZM16.9524 53.2938L18.7935 51.4527C18.8493 51.3969 18.908 51.344 18.968 51.2947C19.3281 51.0009 19.764 50.8259 20.2257 50.7842C20.2386 50.783 20.2522 50.783 20.2651 50.7824C20.3309 50.7771 20.3967 50.7736 20.4631 50.7742C21.094 50.783 21.6803 51.0409 22.115 51.4997C22.968 52.4015 22.9222 53.8748 22.0128 54.7842L20.2275 56.5695C19.3245 57.4725 17.8553 57.4725 16.9524 56.5695C16.0494 55.666 16.0494 54.1968 16.9524 53.2938ZM21.6891 62.6909C21.2514 62.2538 21.0106 61.6722 21.0106 61.0536C21.0106 60.435 21.2514 59.8534 21.6891 59.4158L25.2591 55.8458C25.9429 55.162 27.018 54.9746 27.8921 55.3911C28.7933 55.8205 29.3003 56.7986 29.1681 57.7826C29.0976 58.3078 28.8532 58.8025 28.4784 59.1779L24.9648 62.6909C24.5271 63.1285 23.9455 63.3694 23.3269 63.3694C22.7083 63.3694 22.1267 63.1285 21.6891 62.6909ZM27.0797 68.1337C26.642 67.6967 26.4011 67.1151 26.4011 66.4965C26.4011 65.8779 26.642 65.2963 27.0797 64.8586L30.6491 61.2886C31.3805 60.5578 32.5536 60.4004 33.4489 60.9214C34.2667 61.3973 34.6949 62.3314 34.5545 63.2619C34.4776 63.7736 34.2344 64.2547 33.8684 64.6207L30.3553 68.1337C29.9177 68.5714 29.3361 68.8123 28.7175 68.8123C28.0989 68.8123 27.5173 68.5714 27.0797 68.1337ZM33.2198 72.8804C32.3169 71.9775 32.3169 70.5083 33.2198 69.6053L35.0609 67.7642C35.1167 67.7084 35.1749 67.6561 35.2348 67.6068C35.2366 67.6056 35.2378 67.6044 35.2389 67.6033C35.5385 67.36 35.8904 67.1973 36.2658 67.1262C36.2746 67.1251 36.2834 67.1239 36.2923 67.1227C36.3569 67.111 36.4227 67.1016 36.4885 67.0957C36.5149 67.0933 36.5413 67.0933 36.5684 67.0916C36.6224 67.0886 36.6759 67.0851 36.7305 67.0857C37.3609 67.0945 37.9477 67.3518 38.3825 67.8112C38.4359 67.8676 38.4858 67.9264 38.5317 67.9869C39.226 68.8945 39.1326 70.2427 38.2708 71.1051L36.4949 72.881C35.592 73.784 34.1228 73.7834 33.2198 72.8804ZM61.3858 56.0302C60.4828 56.9337 59.0136 56.9332 58.1106 56.0302C58.0778 55.9973 58.0431 55.9668 58.0078 55.938L48.2994 46.1274C47.7125 45.5346 46.7567 45.5299 46.164 46.1168C45.5712 46.7031 45.5665 47.6589 46.1528 48.2516L55.9664 58.1674C55.9676 58.1686 55.9688 58.1698 55.9699 58.1709C56.8729 59.0739 56.8729 60.5437 55.9699 61.4466C55.5323 61.8843 54.9507 62.1252 54.3321 62.1252C53.7129 62.1252 53.1313 61.8843 52.6942 61.4466L46.1293 54.8136C45.543 54.2208 44.5872 54.2161 43.9945 54.8024C43.4017 55.3893 43.397 56.3451 43.9833 56.9379L50.4478 63.4693C50.4807 63.5104 50.5159 63.5498 50.5535 63.5874C51.4565 64.4903 51.4565 65.9601 50.5535 66.8631C49.65 67.766 48.1802 67.7654 47.2772 66.8625L43.6943 63.2419C43.1074 62.6492 42.1516 62.6439 41.5589 63.2308C40.9661 63.8171 40.9614 64.7729 41.5477 65.3656L45.0308 68.8845C45.0637 68.9256 45.0989 68.9656 45.1371 69.0032C46.04 69.9061 46.04 71.3759 45.1371 72.2789C44.2342 73.1824 42.7649 73.1818 41.862 72.2789C41.758 72.1749 41.6358 72.095 41.5195 72.0057C41.4208 71.9305 41.395 71.8782 41.4443 71.7584C41.4942 71.6368 41.5689 71.5269 41.6188 71.4047C41.674 71.2684 41.7187 71.128 41.7621 70.987C41.9936 70.241 42.0617 69.4385 41.9578 68.6642C41.758 67.1785 40.9409 65.8379 39.7025 64.9896C39.0334 64.532 38.2591 64.2318 37.4566 64.119C37.8455 62.4036 37.3785 60.5437 36.1636 59.2601C35.1637 58.2038 33.8132 57.6111 32.3604 57.5911C32.3075 57.5905 32.2546 57.5905 32.2012 57.5911C32.2335 56.2047 31.7294 54.8271 30.7736 53.8172C29.7732 52.761 28.4226 52.1682 26.9704 52.1483C26.5386 52.1424 26.1027 52.1882 25.6821 52.2851C25.5023 51.0344 24.872 49.8771 23.9173 49.0494C22.9686 48.2281 21.7754 47.7723 20.5048 47.7546C19.1671 47.7352 17.853 48.2287 16.8595 49.1258L11.0231 41.2614L24.9859 24.2508L29.436 25.468L23.6242 35.7234C22.9216 36.9635 22.7442 38.4028 23.1243 39.7763C23.5043 41.1504 24.3961 42.2936 25.6363 42.9962C25.7138 43.0402 25.7919 43.0819 25.8712 43.1219C25.8771 43.1248 25.883 43.1278 25.8895 43.1307C26.098 43.2347 26.3124 43.324 26.5298 43.3992C27.542 43.7499 28.6353 43.7881 29.6898 43.4967C31.0632 43.1166 32.2064 42.2242 32.9091 40.9847L36.6859 34.3199L43.4293 34.7981L61.3863 52.7545C62.2887 53.658 62.2887 55.1273 61.3858 56.0302ZM62.0114 49.1093L45.1659 32.2644C45.1342 32.2321 45.1007 32.2015 45.066 32.1727C44.8234 31.9707 44.5226 31.8485 44.2054 31.8261L35.9486 31.2404C35.3776 31.2011 34.8101 31.5048 34.5281 32.0024L30.2819 39.4961C29.977 40.0342 29.4806 40.4213 28.8843 40.5864C28.2887 40.7515 27.6636 40.6739 27.1249 40.369C26.5868 40.0641 26.1996 39.5677 26.0346 38.9715C25.8695 38.3752 25.9464 37.7501 26.2519 37.212L31.9204 27.2081L34.2173 26.5472C34.2326 26.5425 34.2473 26.5366 34.2626 26.5319L42.8354 24.0564H53.1936L66.1248 40.4948L62.0114 49.1093ZM68.1028 38.1249L56.1444 22.9149L62.2476 19.0335L73.4217 33.548L68.1028 38.1249Z"
+                            fill="#272B2A" />
+                        <path
+                            d="M46.6488 18.2021C47.0353 18.2021 47.4219 18.0546 47.7168 17.7597L58.0303 7.4462C58.6201 6.85638 58.6201 5.90058 58.0303 5.31077C57.4405 4.72095 56.4847 4.72095 55.8949 5.31077L45.5813 15.6243C44.9915 16.2141 44.9915 17.1699 45.5813 17.7597C45.8762 18.0546 46.2628 18.2021 46.6488 18.2021Z"
+                            fill="#272B2A" />
+                        <path
+                            d="M29.2833 17.7597C29.5782 18.0546 29.9648 18.2021 30.3513 18.2021C30.7373 18.2021 31.1239 18.0546 31.4188 17.7597C32.0086 17.1699 32.0086 16.2141 31.4188 15.6243L21.1053 5.31077C20.5154 4.72095 19.5596 4.72095 18.9698 5.31077C18.38 5.90058 18.38 6.85638 18.9698 7.4462L29.2833 17.7597Z"
+                            fill="#272B2A" />
+                        <path
+                            d="M38.5 18.202C39.3336 18.202 40.0098 17.5259 40.0098 16.6923V8.157C40.0098 7.32339 39.3336 6.64722 38.5 6.64722C37.6664 6.64722 36.9902 7.32339 36.9902 8.157V16.6923C36.9902 17.5259 37.6664 18.202 38.5 18.202Z"
+                            fill="#272B2A" />
+                        <path
+                            d="M37.1066 2.68469C37.3463 3.2657 37.9438 3.64696 38.5741 3.61406C39.1968 3.58175 39.7438 3.16113 39.9364 2.56838C40.1297 1.97093 39.9194 1.29006 39.4189 0.90938C38.9084 0.520479 38.1964 0.498743 37.6624 0.851809C37.0667 1.24541 36.8358 2.02909 37.1066 2.68469Z"
+                            fill="#272B2A" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0">
+                            <rect width="77" height="77" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <p class="max-w-md">A note about partnership in design: This was an incredible first experience in
+                    teamwork and
+                    collaboration with a design partner. We would frequently come to a point where we were not agreeing
+                    with the direction the design was going and we didn’t have time to get stuck.</p>
+            </span>
+            </br>
+            <p class="font-bold">Here are some things we both learned during our collaborative efforts:</p>
+            <ol class="list-decimal">
+                <li>If you get stuck when pair-designing, take an hour or two to design on your own. Then come back and
+                    see where each of you went. Taking the best parts of each design and seeing how they can work
+                    together can create incredible results.</li>
+                <li>Always make sure there is a user-experience based reason for all your decisions. Keep the user in
+                    the forefront of your mind!</li>
+                <li>Be kind and take breaks. If you really can’t see the reasoning behind something, ask questions and
+                    seek out other resources that support the other person’s idea.</li>
+            </ol>
+            </br>
+            <p>Knowing we were on a timeline, we quickly came up with several creative ideas for layout and flow. Below
+                you can see the progression as we continued to build, test, and iterate.</p>
+            </br>
+            <p>Home Page Progression</p>
+            </br>
+            <span class="flex my-8">
+                <img class="w-1/4" src="../images/trashpandastudy/tphpp1_1.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tphpp1_2.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tphpp1_3.png">
+            </span>
+            <span class="flex my-8">
+                <img class="w-1/4" src="../images/trashpandastudy/tphpp2_1.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tphpp2_2.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tphpp2_3.png">
+            </span>
+            <span class="flex my-8">
+                <img class="w-1/4" src="../images/trashpandastudy/tphpp3_1.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tphpp3_2.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tphpp3_3.png">
+            </span>
+            </br>
+            <p>We started not knowing whether we should showcase the image recognition over category search. Right away
+                we knew we wanted to create a simplistic design, so we progressed into giving the user all 3 options on
+                the landing page. You can see that more clearly in the final designs below.</p>
+            </br>
+            <p>Category Search Flow Progression</p>
+            </br>
+            <span class="flex my-8">
+                <img class="w-1/4" src="../images/trashpandastudy/tpcsfp1_1.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tpcsfp1_2.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tpcsfp1_3.png">
+            </span>
+            <span class="flex my-8">
+                <img class="w-1/4" src="../images/trashpandastudy/tpcsfp2_1.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tpcsfp2_2.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tpcsfp2_3.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tpcsfp2_4.png">
+            </span>
+            <span class="flex my-8">
+                <img class="w-1/4" src="../images/trashpandastudy/tpcsfp3_1.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tpcsfp3_2.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tpcsfp3_3.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tpcsfp3_4.png">
+            </span>
+            </br>
+            <p>For category search, we wanted to remove any friction the user might encounter. We considered whether the
+                user would prefer actual photos or icons to describe an item or material. </p>
+            </br>
+            </br>
+            <p>From user testing, we learned that users more easily recognize photos of items over icons. We realized we
+                would have to sacrifice some aesthetics to include photos of all 300 items in the database, but it was
+                something we did not regret doing in the end.</p>
+            </br>
+            </br>
+            <p>Camera & Results Progression</p>
+            </br>
+            <span class="flex my-8">
+                <img class="w-1/4" src="../images/trashpandastudy/tpcrp1_1.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tpcrp1_2.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tpcrp1_3.png">
+            </span>
+            <span class="flex my-8">
+                <img class="w-1/4" src="../images/trashpandastudy/tpcrp2_1.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tpcrp2_2.png">
+            </span>
+            <span class="flex my-8">
+                <img class="w-1/4" src="../images/trashpandastudy/tpcrp3_1.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tpcrp3_2.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tpcrp3_3.png">
+            </span>
+            <p>We wanted to make this flow as simple as possible: take a picture, get a result. This was where we had to
+                collaborate closely with the data science team. We weren’t sure if their image recognition model would
+                be able to take information from users to learn, or if the user took another picture that the results
+                would be any different.</p>
+            </br>
+            <p>Navigation Progression</p>
+            </br>
+            <span class="flex my-8">
+                <img class="w-1/4" src="../images/trashpandastudy/tpnp1_1.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tpnp1_2.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tpnp1_3.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tpnp1_4.png">
+            </span>
+            <span class="flex my-8">
+                <img class="w-1/4" src="../images/trashpandastudy/tpnp2_1.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tpnp2_2.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tpnp2_3.png">
+                <img class="w-1/4" src="../images/trashpandastudy/tpnp2_4.png">
+            </span>
+          
+
+
+
+
+        </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer>
+            <span class="flex flex-row my-8 justify-center items-center mt-48">
+                <svg class="mx-8" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                        <path
+                            d="M18.395 5.39026C19.1293 4.57196 19.5574 3.71521 19.7075 2.83575C17.6313 1.09717 14.9605 0 12.0469 0C10.5425 0 9.10791 0.291138 7.78076 0.800537C10.0031 3.0271 11.8616 5.66345 13.3153 8.50928C15.4573 7.73474 17.2426 6.67511 18.395 5.39026Z"
+                            fill="#272B2A" />
+                        <path
+                            d="M19.4414 6.32962C18.1514 7.76737 16.2339 8.93668 13.9431 9.78647C14.2278 10.4109 14.4895 11.0482 14.7358 11.6939C15.9122 11.4408 17.1315 11.2969 18.375 11.2969C20.3326 11.2969 22.2343 11.6291 23.9879 12.2395C23.9896 12.1592 24 12.081 24 12C24 8.90463 22.8073 6.08939 20.87 3.96426C20.5842 4.78787 20.1097 5.58493 19.4414 6.32962Z"
+                            fill="#272B2A" />
+                        <path
+                            d="M0.27417 9.474C1.76886 9.73822 3.42487 9.89056 5.01569 9.89056C7.48175 9.89056 9.85059 9.54047 11.9618 8.93915C10.507 6.14404 8.63678 3.57159 6.40454 1.42029C3.36664 3.05414 1.02271 6.01056 0.27417 9.474Z"
+                            fill="#272B2A" />
+                        <path
+                            d="M23.8667 13.6873C22.1704 13.0488 20.3035 12.7031 18.375 12.7031C17.2939 12.7031 16.2323 12.8165 15.2084 13.0234C16.2479 16.1407 16.8494 19.5103 16.9521 22.9352C20.6091 21.2809 23.2822 17.7962 23.8667 13.6873Z"
+                            fill="#272B2A" />
+                        <path
+                            d="M0 12.0001C0 15.6981 1.78253 19.0553 4.42841 21.2495C4.70874 19.3845 5.54956 17.5498 6.91901 16.0143C8.54791 14.188 10.8083 12.8204 13.3682 12.0398C13.1299 11.4253 12.8698 10.8229 12.5951 10.2289C10.3077 10.9073 7.73145 11.2969 5.01562 11.2969C3.35413 11.2969 1.62506 11.1382 0.0576782 10.8628C0.0221558 11.2376 0 11.6163 0 12.0001H0Z"
+                            fill="#272B2A" />
+                        <path
+                            d="M7.96893 16.9501C6.58557 18.5014 5.83612 20.3207 5.73999 22.182C7.57343 23.3269 9.73059 24 12.0469 24C13.2647 24 14.4397 23.8147 15.5477 23.4747C15.4938 19.9737 14.9061 16.5313 13.8375 13.3629C11.4983 14.0644 9.44073 15.2998 7.96893 16.9501Z"
+                            fill="#272B2A" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0">
+                            <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <svg class="mx-8" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                        <path
+                            d="M7.996 21.3242C7.996 22.0192 7.475 22.3062 6.898 22.0192L0.67 18.9062C0.482 18.8172 0.324 18.6682 0.195 18.4592C0.066 18.2502 0 18.0422 0 17.8372V2.6102C0 2.0422 0.341 1.7852 1.112 2.1692L7.956 5.5892C8.055 5.6882 7.982 5.0082 7.996 21.3242ZM8.853 7.0042L16.005 18.5722L8.853 15.0192V7.0042ZM24 7.2452V21.3242C24 21.5472 23.938 21.7272 23.812 21.8652C23.687 22.0032 23.517 22.0722 23.303 22.0722C23.089 22.0722 22.879 22.0142 22.674 21.8982L16.768 18.9592L24 7.2452ZM23.96 5.6422C23.96 5.6692 22.815 7.5372 20.525 11.2452C18.235 14.9532 16.893 17.1252 16.5 17.7572L11.277 9.2882L15.616 2.2492C15.852 1.8612 16.336 1.7932 16.661 1.9552L23.907 5.5622C23.942 5.5792 23.96 5.6062 23.96 5.6422Z"
+                            fill="#272B2A" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0">
+                            <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <svg class="mx-8" width="24" height="20" viewBox="0 0 24 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                        <path
+                            d="M21.6 0H2.4C1.08 0 0 1.08 0 2.4V16.8C0 18.12 1.08 19.2 2.4 19.2H21.6C22.92 19.2 24 18.12 24 16.8V2.4C24 1.08 22.92 0 21.6 0ZM21.6 16.8H19.2V6.24L12 10.8L4.8 6.24V16.8H2.4V2.4H3.84L12 7.44L20.16 2.4H21.6V16.8Z"
+                            fill="#272B2A" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0">
+                            <rect width="24" height="19.3333" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <svg class="mx-8" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 0C5.3736 0 0 5.3736 0 12C0 18.6264 5.3736 24 12 24C18.6264 24 24 18.6264 24 12C24 5.3736 18.6264 0 12 0ZM8.51294 18.1406H5.59039V9.34808H8.51294V18.1406ZM7.05176 8.14746H7.03271C6.052 8.14746 5.41772 7.47235 5.41772 6.6286C5.41772 5.76581 6.07141 5.10938 7.07117 5.10938C8.07092 5.10938 8.68616 5.76581 8.7052 6.6286C8.7052 7.47235 8.07092 8.14746 7.05176 8.14746ZM19.051 18.1406H16.1288V13.4368C16.1288 12.2547 15.7057 11.4485 14.6483 11.4485C13.8409 11.4485 13.3601 11.9923 13.1488 12.5173C13.0715 12.7051 13.0527 12.9677 13.0527 13.2305V18.1406H10.1303C10.1303 18.1406 10.1686 10.173 10.1303 9.34808H13.0527V10.593C13.441 9.9939 14.1359 9.14172 15.6865 9.14172C17.6093 9.14172 19.051 10.3984 19.051 13.099V18.1406Z"
+                        fill="#272B2A" />
+                </svg>
+            </span>
+        </footer>
+    </div>
+</body>
+
+</html>
