@@ -1,0 +1,29 @@
+@tailwind base;
+
+body {
+    @apply text-B1;
+    @apply font-light;
+    @apply leading-tight;
+    @apply text-outerspace;
+}
+h1 {
+    @apply text-H1;
+    @apply font-bold;
+}
+h2 {
+    @apply text-H2;
+    @apply font-normal;
+    @apply text-pumpkin;
+}
+h3 {
+    @apply text-H3;
+    @apply font-normal;
+}
+h4 {
+    @apply text-B1;
+    @apply font-bold;
+}
+
+@tailwind components;
+
+@tailwind utilities;
