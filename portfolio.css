@@ -4037,44 +4037,32 @@ video {
   height: 100vh;
 }
 
-.text-xs {
-  font-size: 0.75rem;
+.text-H1 {
+  font-size: 48px;
 }
 
-.text-sm {
-  font-size: 0.875rem;
+.text-H2 {
+  font-size: 36px;
 }
 
-.text-base {
-  font-size: 1rem;
+.text-H3 {
+  font-size: 32px;
 }
 
-.text-lg {
-  font-size: 1.125rem;
+.text-B1 {
+  font-size: 28px;
 }
 
-.text-xl {
-  font-size: 1.25rem;
+.text-B2 {
+  font-size: 24px;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
+.text-B3 {
+  font-size: 20px;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-}
-
-.text-6xl {
-  font-size: 4rem;
+.text-B4 {
+  font-size: 18px;
 }
 
 .leading-3 {
@@ -18697,44 +18685,32 @@ video {
     height: 100vh;
   }
 
-  .sm\:text-xs {
-    font-size: 0.75rem;
+  .sm\:text-H1 {
+    font-size: 48px;
   }
 
-  .sm\:text-sm {
-    font-size: 0.875rem;
+  .sm\:text-H2 {
+    font-size: 36px;
   }
 
-  .sm\:text-base {
-    font-size: 1rem;
+  .sm\:text-H3 {
+    font-size: 32px;
   }
 
-  .sm\:text-lg {
-    font-size: 1.125rem;
+  .sm\:text-B1 {
+    font-size: 28px;
   }
 
-  .sm\:text-xl {
-    font-size: 1.25rem;
+  .sm\:text-B2 {
+    font-size: 24px;
   }
 
-  .sm\:text-2xl {
-    font-size: 1.5rem;
+  .sm\:text-B3 {
+    font-size: 20px;
   }
 
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-  }
-
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-  }
-
-  .sm\:text-5xl {
-    font-size: 3rem;
-  }
-
-  .sm\:text-6xl {
-    font-size: 4rem;
+  .sm\:text-B4 {
+    font-size: 18px;
   }
 
   .sm\:leading-3 {
@@ -33358,44 +33334,32 @@ video {
     height: 100vh;
   }
 
-  .md\:text-xs {
-    font-size: 0.75rem;
+  .md\:text-H1 {
+    font-size: 48px;
   }
 
-  .md\:text-sm {
-    font-size: 0.875rem;
+  .md\:text-H2 {
+    font-size: 36px;
   }
 
-  .md\:text-base {
-    font-size: 1rem;
+  .md\:text-H3 {
+    font-size: 32px;
   }
 
-  .md\:text-lg {
-    font-size: 1.125rem;
+  .md\:text-B1 {
+    font-size: 28px;
   }
 
-  .md\:text-xl {
-    font-size: 1.25rem;
+  .md\:text-B2 {
+    font-size: 24px;
   }
 
-  .md\:text-2xl {
-    font-size: 1.5rem;
+  .md\:text-B3 {
+    font-size: 20px;
   }
 
-  .md\:text-3xl {
-    font-size: 1.875rem;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-  }
-
-  .md\:text-5xl {
-    font-size: 3rem;
-  }
-
-  .md\:text-6xl {
-    font-size: 4rem;
+  .md\:text-B4 {
+    font-size: 18px;
   }
 
   .md\:leading-3 {
@@ -48019,44 +47983,32 @@ video {
     height: 100vh;
   }
 
-  .lg\:text-xs {
-    font-size: 0.75rem;
+  .lg\:text-H1 {
+    font-size: 48px;
   }
 
-  .lg\:text-sm {
-    font-size: 0.875rem;
+  .lg\:text-H2 {
+    font-size: 36px;
   }
 
-  .lg\:text-base {
-    font-size: 1rem;
+  .lg\:text-H3 {
+    font-size: 32px;
   }
 
-  .lg\:text-lg {
-    font-size: 1.125rem;
+  .lg\:text-B1 {
+    font-size: 28px;
   }
 
-  .lg\:text-xl {
-    font-size: 1.25rem;
+  .lg\:text-B2 {
+    font-size: 24px;
   }
 
-  .lg\:text-2xl {
-    font-size: 1.5rem;
+  .lg\:text-B3 {
+    font-size: 20px;
   }
 
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-  }
-
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-  }
-
-  .lg\:text-5xl {
-    font-size: 3rem;
-  }
-
-  .lg\:text-6xl {
-    font-size: 4rem;
+  .lg\:text-B4 {
+    font-size: 18px;
   }
 
   .lg\:leading-3 {
@@ -62680,44 +62632,32 @@ video {
     height: 100vh;
   }
 
-  .xl\:text-xs {
-    font-size: 0.75rem;
+  .xl\:text-H1 {
+    font-size: 48px;
   }
 
-  .xl\:text-sm {
-    font-size: 0.875rem;
+  .xl\:text-H2 {
+    font-size: 36px;
   }
 
-  .xl\:text-base {
-    font-size: 1rem;
+  .xl\:text-H3 {
+    font-size: 32px;
   }
 
-  .xl\:text-lg {
-    font-size: 1.125rem;
+  .xl\:text-B1 {
+    font-size: 28px;
   }
 
-  .xl\:text-xl {
-    font-size: 1.25rem;
+  .xl\:text-B2 {
+    font-size: 24px;
   }
 
-  .xl\:text-2xl {
-    font-size: 1.5rem;
+  .xl\:text-B3 {
+    font-size: 20px;
   }
 
-  .xl\:text-3xl {
-    font-size: 1.875rem;
-  }
-
-  .xl\:text-4xl {
-    font-size: 2.25rem;
-  }
-
-  .xl\:text-5xl {
-    font-size: 3rem;
-  }
-
-  .xl\:text-6xl {
-    font-size: 4rem;
+  .xl\:text-B4 {
+    font-size: 18px;
   }
 
   .xl\:leading-3 {

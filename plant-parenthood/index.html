@@ -4,63 +4,66 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../portfolio.css" rel="stylesheet" />
+    <link href="/portfolio.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-white text-outerspace font-sans mx-40">
+<body class="bg-white text-outerspace font-sans">
     <div class="container m-auto">
-        <header>
+        <header class="px-4">
             <nav class="flex justify-between items-baseline">
                 <span class="text-2xl font-black">
                     Lynn Baxter
                 </span>
-                <span class="flex text-md">
-                    <div class="flex-row mx-16">
-                        Work
-                    </div>
-                    <div>
-                        About
-                    </div>
+                <span class="flex flex-row text-md">
+                    <div class="px-1"><a href="/trash-panda/">Trash Panda</a></div>
+                    <div class="px-1"><a href="/plant-parenthood/">Plant Parenthood </a></div>
+                    <div class="px-1"><a href="/nextbook/">NextBook</a></div>
+                    <div class="px-1"><a href="/about-me/">About</a></div>
                 </span>
             </nav>
         </header>
-        <main>
-            <span class="flex my-8">
-                <img class="w-1/4 mr-4" src="../images/plantparenthoodstudy/pphero1.png">
-                <img class="w-1/4 mr-4" src="../images/plantparenthoodstudy/pphero2.png">
-                <img class="w-1/4 mr-4" src="../images/plantparenthoodstudy/pphero3.png">
-                <img class="w-1/4 mr-4" src="../images/plantparenthoodstudy/pphero4.png">
-            </span>
+        <main class="px-4">
+            <div class="flex flex-wrap">
+                <img class="w-5/12 sm:w-1/5 m-2 sm:m-0 sm:mr-2" src="/images/plantparenthoodstudy/pphero1.png">
+                <img class="w-5/12 sm:w-1/5 m-2 sm:m-0 sm:mr-2" src="/images/plantparenthoodstudy/pphero2.png">
+                <img class="w-5/12 sm:w-1/5 m-2 sm:m-0 sm:mr-2" src="/images/plantparenthoodstudy/pphero3.png">
+                <img class="w-5/12 sm:w-1/5 m-2 sm:m-0 sm:mr-2" src="/images/plantparenthoodstudy/pphero4.png">
+            </div>
+
             <h1 class="text-4xl font-black">Plant Parenthood</h1>
-            </br>
-            <span class="flex flex-row">
-                <div>
-                    <p class="font-bold">Area of focus</p>
-                    <p>Aligning product design with user research</p>
-                    <p>Exploring unique solution possibilities</p>
-                    <p>Planning for future opportunities beyond MVP</p>
+
+            <section class="sm:flex sm:flex-row">
+                <div class="py-1">
+                    <h3 class="font-bold">Area of focus</h3>
+                    <ul>
+                        <li>Aligning product design with user research</li>
+                        <li>Exploring unique solution possibilities</li>
+                        <li>Planning for future opportunities beyond MVP</li>
+                    </ul>
                 </div>
-                <div>
-                    <p class="font-bold">Additional details</p>
-                    <p>2 weeks for discovery & ideation</p>
-                    <p>Required to develop and ship MVP in 1 week </p>
-                    <p>Team included 1 designer, 1 UI dev, 3 react devs, and 1 backend dev</p>
+                <div class="py-1">
+                    <h3 class="font-bold">Additional details</h3>
+                    <ul>
+                        <li>2 weeks for discovery & ideation</li>
+                        <li>Required to develop and ship MVP in 1 week </li>
+                        <li>Team included 1 designer, 1 UI dev, 3 react devs, and 1 backend dev</li>
+                    </ul>
                 </div>
-            </span>
-            </br>
-            <span>
-                <span class="font-bold">Problem:</span>
-                <span>Many of us want to be proud plant parents, but end up not having the time or attention span to
-                    keep
-                    those plants in great health.</span>
-                </br>
-                </br>
-                <span class="font-bold">Solution:</span>
-                <span>A plant care reminder app that does the hard work of scheduling for you, by using the happiness
+            </section>
+
+            <section>
+                <h3 class="font-bold">Problem:</h3>
+                <p>
+                    Many of us want to be proud plant parents, but end up not having the time or attention span to
+                    keep those plants in great health.
+                </p>
+                <h3 class="font-bold">Solution:</h3>
+                <p>
+                    A plant care reminder app that does the hard work of scheduling for you, by using the happiness
                     and health information you give us to send you periodic reminders to care for your plants.
-                </span>
-            </span>
+                </p>
+            </section>
             </br>
             </br>
             <h3 class="font-bold text-lg text-bamboo">Discovery: Do people really want their plants to thrive?</h3>
@@ -273,7 +276,7 @@
             </br>
             <div class="flex">
                 <span>
-                    <img src=".gif">
+                    <img class="w-full" src="../images/plantparenthoodstudy/plant-parenthood-lo-fi-final.gif">
                 </span>
                 <span>
                     <p>What I was testing:</p>
@@ -403,7 +406,7 @@
                 make users disgruntled - something I am sure all designers need to learn one way or the other.</p>
             </br>
             <p>Desktop: Exploring how Plant Parenthood would function on other devices</p>
-            <img src=".gif">
+            <img src="../images/plantparenthoodstudy/plant-parenthood-hi-fi-desktop-f.gif">
             </br>
             <h3 class="font-bold text-lg text-bamboo">What I learned...</h3>
             </br>
@@ -432,7 +435,7 @@
             </br>
             </br>
             </br>
-            <button class="py-2 px-4 my-8 border border-current text-bamboo rounded inline-flex items-center">
+            <button class="py-1 px-3 my-8 border border-current text-bamboo rounded inline-flex items-center">
                 <span>NextBook</span>
                 <svg class="w-2 h-3 ml-2" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path

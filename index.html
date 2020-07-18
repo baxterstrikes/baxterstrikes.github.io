@@ -4,105 +4,96 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="portfolio.css" rel="stylesheet" />
+    <link href="/portfolio.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-white text-outerspace font-sans mx-64">
-    <div class="container  m-auto">
-        <header>
+<body class="bg-white text-outerspace font-sans">
+    <div class="container m-auto">
+        <header class="px-4">
             <nav class="flex justify-between items-baseline">
                 <span class="text-2xl font-black">
                     Lynn Baxter
                 </span>
-                <span class="flex text-md">
-                    <div class="flex-row mx-16">
-                        Work
-                    </div>
-                    <div>
-                        About
-                    </div>
+                <span class="flex flex-row text-md">
+                    <div class="px-1"><a href="/trash-panda/">Trash Panda</a></div>
+                    <div class="px-1"><a href="/plant-parenthood/">Plant Parenthood </a></div>
+                    <div class="px-1"><a href="/nextbook/">NextBook</a></div>
+                    <div class="px-1"><a href="/about-me/">About</a></div>
                 </span>
             </nav>
         </header>
-        <main>
-            <div class=" flex flex-wrap">
-                <span class="text-left my-24 font-black text-4xl">
-                    Hi! I'm Lynn - a UX Designer, book nerd, and science enthusiast located in Berkeley, CA
-                </span>
-                <section class="w-full">
-                    <div class="h-full w-full flex overflow-hidden">
-                        <div class="w-5/12 p-4">
-                            <h2 class="text-lg">
-                                Trash Panda
-                            </h2>
-                            Helping people create better recycling habits, one bit of trash at a time
-                            </br>
-                            <button
-                                class="py-2 px-4 my-8 border border-current text-bamboo rounded inline-flex items-center">
-                                <span>Learn more</span>
-                                <svg class="w-2 h-3 ml-2" viewBox="0 0 7 12" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M5.82386e-05 10.7629L0.716129 11.5L6.37866 6.00018L0.71613 0.500001L5.90713e-05 1.23725L4.90306 6.00018L5.82386e-05 10.7629Z"
-                                        fill="#DF5F02" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="w-7/12 px-2 self-end pt-5 pr-5">
-                            <img alt="" class="object-contain w-2/5" src="./images/landingpage/lp_trashpandamock.png">
-                        </div>
+        <main class="px-4">
+            <div class="text-left my-24 font-black text-4xl">
+                Hi! I'm Lynn - a UX Designer, book nerd, and science enthusiast
+                located in Berkeley, CA
+            </div>
+            <div class="flex flex-wrap">
+
+                <section class="h-full w-full flex overflow-hidden">
+                    <div class="w-5/12 p-4 self-center">
+                        <h2 class="text-lg">Trash Panda</h2>
+                        Helping people create better recycling habits, one bit of trash at a time
+                        </br>
+                        <a href="/trash-panda/"
+                            class="py-1 px-3 my-8 border border-current text-bamboo rounded inline-flex items-center">
+                            <span>Learn more</span>
+                            <svg class="w-2 h-3 ml-2" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.82386e-05 10.7629L0.716129 11.5L6.37866 6.00018L0.71613 0.500001L5.90713e-05 1.23725L4.90306 6.00018L5.82386e-05 10.7629Z"
+                                    fill="#DF5F02" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="w-7/12 px-5 pt-5 bg-gray-400">
+                        <img alt="" class="object-contain w-3/5 m-auto "
+                            src="./images/landingpage/lp_trashpandamock.png">
                     </div>
                 </section>
 
-                <section class="w-full">
-                    <div class="h-full w-full flex overflow-hidden">
-                        <div class="w-5/12 p-4">
-                            <h2 class="text-lg">
-                                Plant Parenthood
-                            </h2>
-                            Ensuring the health and happiness of all plants everywhere
-                            </br>
-                            <button
-                                class="py-2 px-4 my-8 border border-current text-bamboo rounded inline-flex items-center">
-                                <span>Learn more</span>
-                                <svg class="w-2 h-3 ml-2" viewBox="0 0 7 12" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M5.82386e-05 10.7629L0.716129 11.5L6.37866 6.00018L0.71613 0.500001L5.90713e-05 1.23725L4.90306 6.00018L5.82386e-05 10.7629Z"
-                                        fill="#DF5F02" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="w-7/12 px-2 self-end pt-5 pr-5">
-                            <img alt="" class="object-contain w-2/5"
-                                src="./images/landingpage/lp_plantparenthoodmock.png">
-                        </div>
+                <section class="h-full w-full flex overflow-hidden my-10">
+                    <div class="w-5/12 p-4 self-center">
+                        <h2 class="text-lg">
+                            Plant Parenthood
+                        </h2>
+                        Ensuring the health and happiness of all plants everywhere
+                        </br>
+                        <a href="/plant-parenthood/"
+                            class="py-1 px-3 my-8 border border-current text-bamboo rounded inline-flex items-center">
+                            <span>Learn more</span>
+                            <svg class="w-2 h-3 ml-2" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.82386e-05 10.7629L0.716129 11.5L6.37866 6.00018L0.71613 0.500001L5.90713e-05 1.23725L4.90306 6.00018L5.82386e-05 10.7629Z"
+                                    fill="#DF5F02" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="w-7/12 px-5 pt-5 bg-gray-400">
+                        <img alt="" class="object-contain w-3/5 m-auto"
+                            src="./images/landingpage/lp_plantparenthoodmock.png">
                     </div>
                 </section>
 
-                <section class="w-full">
-                    <div class="h-full w-full flex overflow-hidden">
-                        <div class="w-5/12 p-4">
-                            <h2 class="text-lg">
-                                NextBook
-                            </h2>
-                            Assisting book lovers in finding their next great book
-                            </br>
-                            <button
-                                class="py-2 px-4 my-8 border border-current text-bamboo rounded inline-flex items-center">
-                                <span>Learn more</span>
-                                <svg class="w-2 h-3 ml-2" viewBox="0 0 7 12" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M5.82386e-05 10.7629L0.716129 11.5L6.37866 6.00018L0.71613 0.500001L5.90713e-05 1.23725L4.90306 6.00018L5.82386e-05 10.7629Z"
-                                        fill="#DF5F02" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="w-7/12 px-2 self-end pt-5">
-                            <img alt="" class="object-contain w-2/5" src="./images/landingpage/lp_trashpandamock.png">
-                        </div>
+                <section class="h-full w-full flex overflow-hidden">
+                    <div class="w-5/12 p-4 self-center">
+                        <h2 class="text-lg">
+                            NextBook
+                        </h2>
+                        Assisting book lovers in finding their next great book
+                        </br>
+                        <a href="/nextbook/"
+                            class="py-1 px-3 my-8 border border-current text-bamboo rounded inline-flex items-center">
+                            <span>Learn more</span>
+                            <svg class="w-2 h-3 ml-2" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.82386e-05 10.7629L0.716129 11.5L6.37866 6.00018L0.71613 0.500001L5.90713e-05 1.23725L4.90306 6.00018L5.82386e-05 10.7629Z"
+                                    fill="#DF5F02" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="w-7/12 px-5 pt-5 bg-gray-400">
+                        <img alt="" class="object-contain w-3/5 m-auto"
+                            src="./images/landingpage/lp_trashpandamock.png">
                     </div>
                 </section>
             </div>
