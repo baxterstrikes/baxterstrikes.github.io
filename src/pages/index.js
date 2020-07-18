@@ -1,43 +1,44 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import CaseStudyCard from "../components/case_study_card"
 
-const caseStudies =
-  [
-    {
-      title: "Trash Panda",
-      slug: "trash-panda",
-      description: "Helping people create better recycling habits, one bit of trash at a time"
-    },
-    {
-      title: "Plant Parenthood",
-      slug: "plant-parenthood",
-      description: "Ensuring the health and happiness of all plants everywhere"
-    },
-    {
-      title: "NextBook",
-      slug: "nextbook",
-      description: "Assisting book lovers in finding their next great book"
+export const pageQuery = graphql`
+    query CaseStudiesIndex {
+        allContentYaml {
+            edges {
+                node {
+                    title
+                    description
+                    path
+                    image {
+                        childImageSharp {
+                            fluid(maxWidth: 600) {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-  ];
+`
 
-const caseStudyCards = caseStudies.map((caseStudy, i) =>
-  (<CaseStudyCard caseStudy={caseStudy} />)
-)
+const IndexPage = ({ data }) => {
+  const caseStudies = data.allContentYaml.edges.map(edge => edge.node);
+  const caseStudyCards = caseStudies.map((caseStudy, i) =>
+    (<CaseStudyCard key={"case-study-" + i} caseStudy={caseStudy} />)
+  )
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <div className="text-left my-24 text-4xl">
-      Hi! I'm Lynn - a UX Designer, book nerd, and science enthusiast located in Berkeley, CA
-    </div>
-
-    {caseStudyCards}
-
-  </Layout>
-)
-
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <div className="text-left my-24 px-4 text-H1 font-bold">
+        Hi! I'm Lynn — a UX Designer, book nerd, and science enthusiast located in Berkeley, CA.
+      </div>
+      {caseStudyCards}
+    </Layout>
+  )
+}
 export default IndexPage

@@ -7,7 +7,7 @@ const Header = ({ siteTitle }) => (
     <Link to="/" className="text-B2 font-bold">
       {siteTitle}
     </Link>
-    <nav class="flex justify-between items-baseline">
+    <nav className="flex justify-between items-baseline">
 
     </nav>
   </header>

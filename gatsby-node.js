@@ -1,7 +1,22 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+exports.createPages = async ({ actions: { createPage }, graphql }) => {
+    const result = await graphql(`
+        query CaseStudies {
+            allContentYaml {
+                edges {
+                    node {
+                        title
+                        path
+                    }
+                }
+            }
+        }
+    `)
 
-// You can delete this file if you're not using it
+    result.data.allContentYaml.edges.forEach((edge, i) => {
+        createPage({
+            path: `/${edge.node.path}/`,
+            component: require.resolve("./src/pages/case-study.js"),
+            context: { edge: i },
+        })
+    });
+}
