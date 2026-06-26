@@ -1,0 +1,72 @@
+---
+import '@fontsource-variable/fraunces';
+import '@fontsource-variable/inter';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+const {
+  title = 'Lynn Baxter — Designer',
+  description = 'A designer who builds calm, intentional things for kids and the people raising them.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <nav class="site-nav">
+      <a class="wordmark" href="/">Lynn Baxter</a>
+      <div class="links">
+        <a href="/">Work</a>
+        <a href="/about">About</a>
+      </div>
+    </nav>
+
+    <slot />
+
+    <footer class="site-footer">
+      <span>Lynn Baxter — designer · Albany, CA</span>
+    </footer>
+
+    <style>
+      .site-nav {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .site-nav .wordmark {
+        font-family: var(--font-display);
+        font-weight: 500;
+        font-size: 1.15rem;
+        text-decoration: none;
+        letter-spacing: -0.01em;
+        color: var(--color-ink);
+      }
+      .site-nav .links { display: flex; gap: 1.5rem; }
+      .site-nav .links a { font-size: 0.95rem; text-decoration: none; color: var(--color-muted); }
+      .site-nav .links a:hover { color: var(--color-clay); }
+      .site-footer {
+        max-width: 760px;
+        margin: 4rem auto 0;
+        padding: 1.5rem 1.5rem 3rem;
+        border-top: 1px solid var(--color-line);
+        color: var(--color-faint);
+        font-size: 0.85rem;
+      }
+    </style>
+  </body>
+</html>

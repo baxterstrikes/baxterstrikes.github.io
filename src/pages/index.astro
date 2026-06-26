@@ -1,0 +1,71 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+const studies = await getCollection('caseStudies');
+---
+
+<Base title="Lynn Baxter — Designer">
+  <main class="container home">
+    <p class="eyebrow">Designer · Experimentalist</p>
+    <h1>Lynn Baxter</h1>
+    <p class="lede">
+      I design for childhood and the people who raise it — framing the question,
+      designing the study, building it, and learning from what it teaches.
+    </p>
+
+    <p class="section-label">Selected Work</p>
+    <ul class="work">
+      {studies.map((s) => (
+        <li>
+          <a href={`/work/${s.id}`}>
+            <h2>{s.data.title}</h2>
+            <p class="blurb">{s.data.description}</p>
+            <span class="go">View case study →</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </main>
+
+  <style>
+    .home { padding-block: 5rem 6rem; }
+    h1 { font-size: var(--step-4); margin: 0.5rem 0 1.25rem; }
+    .lede {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: 1.45rem;
+      line-height: 1.5;
+      color: var(--color-ink-soft);
+      max-width: 36ch;
+      margin: 0 0 var(--space-5);
+    }
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: var(--step--1);
+      font-weight: 600;
+      color: var(--color-muted);
+      border-bottom: 1px solid var(--color-line);
+      padding-bottom: 0.75rem;
+      margin: 0 0 0.25rem;
+    }
+    .work { list-style: none; padding: 0; margin: 0; }
+    .work li a {
+      display: block;
+      text-decoration: none;
+      padding: 1.6rem 0;
+      border-bottom: 1px solid var(--color-line);
+    }
+    .work h2 { font-size: var(--step-2); margin: 0 0 0.2rem; transition: color 0.15s; }
+    .blurb { color: var(--color-muted); margin: 0 0 0.5rem; }
+    .go {
+      font-size: 0.85rem;
+      color: var(--color-clay);
+      font-weight: 500;
+      opacity: 0;
+      transition: opacity 0.15s;
+    }
+    .work li a:hover h2 { color: var(--color-clay); }
+    .work li a:hover .go { opacity: 1; }
+  </style>
+</Base>

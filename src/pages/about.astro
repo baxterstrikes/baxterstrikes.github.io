@@ -1,0 +1,48 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="About — Lynn Baxter">
+  <main class="container about">
+    <p class="eyebrow">About</p>
+    <img class="portrait" src="/assets/portrait.png" alt="Lynn Baxter" width="120" height="120" />
+    <div class="prose">
+      <p class="lead">I came to design sideways.</p>
+      <p>
+        For years I ran facilities and operations — Slack, then Blend — planning spaces and
+        keeping the invisible logistics running, until my role was cut in the 2019 layoffs. So I
+        retrained at BloomTech and spent 2020–2022 designing products for fintech and marketplace
+        startups. Then life got loud — a new baby, a decade-deep audiobook habit, a childcare math
+        problem that wouldn't solve — and I stepped back from the screen. This site is me stepping
+        back toward it.
+      </p>
+      <p>
+        What I do hasn't changed since the facilities days: find the broken system, build the thing
+        that should've existed. When I couldn't find a Dreamlight Valley walkthrough that wasn't <em>yelling</em>, I made my own — calm, no chatter, the kind of thing a kid can watch without
+        their brain melting. Same instinct behind Kiddex, and behind the childcare space I'm designing
+        now. Different medium each time.
+      </p>
+      <p>
+        I'm a mom of four in Albany, California, with a biology degree I never stopped thinking with.
+        I've narrated audiobooks for most of a decade — a children's collection and a vampire mystery,
+        because range is the point. Mostly I build calm, intentional things for kids and the people
+        raising them — because someone should.
+      </p>
+    </div>
+  </main>
+
+  <style>
+    .about { padding-block: 3rem 4rem; max-width: 680px; }
+    .portrait { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 1rem 0 2rem; }
+    .prose .lead {
+      font-family: var(--font-display);
+      font-size: 2.1rem;
+      font-weight: 500;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin: 0 0 1.5rem;
+    }
+    .prose p { font-size: 1.12rem; line-height: 1.7; margin: 0 0 1.3rem; max-width: 60ch; color: var(--color-ink); }
+    .prose em { font-style: italic; color: var(--color-clay); }
+  </style>
+</Base>
