@@ -12,7 +12,7 @@ const { Content } = await render(study);
 ---
 
 <Base title={`${study.data.title} — Lynn Baxter`} description={study.data.description}>
-  <article class="container study">
+  <main class="container study">
     <a class="back" href="/">← All work</a>
     <header>
       <h1>{study.data.title}</h1>
@@ -22,7 +22,7 @@ const { Content } = await render(study);
     <div class="prose">
       <Content />
     </div>
-  </article>
+  </main>
 
   <style>
     .study { padding-block: 2.5rem clamp(4rem, 11vw, 6rem); }

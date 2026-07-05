@@ -2,6 +2,8 @@
 import '@fontsource-variable/fraunces';
 import '@fontsource-variable/inter';
 import '../styles/global.css';
+import frauncesUrl from '@fontsource-variable/fraunces/files/fraunces-latin-wght-normal.woff2?url';
+import interUrl from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
 
 interface Props {
   title?: string;
@@ -18,6 +20,8 @@ const {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href={frauncesUrl} />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href={interUrl} />
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />
