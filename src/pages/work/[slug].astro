@@ -25,14 +25,14 @@ const { Content } = await render(study);
   </article>
 
   <style>
-    .study { padding-block: 2.5rem 6rem; }
-    .back { font-size: 0.92rem; color: var(--color-muted); text-decoration: none; }
+    .study { padding-block: 2.5rem clamp(4rem, 11vw, 6rem); }
+    .back { font-size: var(--step-0); color: var(--color-muted); text-decoration: none; }
     .back:hover { color: var(--color-clay); }
     header h1 { font-size: var(--step-4); margin: 1.5rem 0 0.4rem; }
     .desc {
       font-family: var(--font-display);
       font-weight: 400;
-      font-size: 1.35rem;
+      font-size: clamp(1.15rem, 1rem + 0.85vw, 1.4rem);
       color: var(--color-ink-soft);
       margin: 0 0 2rem;
       max-width: 42ch;

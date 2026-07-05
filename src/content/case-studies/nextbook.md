@@ -2,6 +2,7 @@
 title: "NextBook"
 description: "Assisting book lovers in finding their next great book"
 slug: nextbook
+category: coursework
 color: cornflower_lilac
 hero: /assets/nb-hero-01.png
 blob: /assets/blob-nb.png

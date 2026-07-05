@@ -19,13 +19,13 @@
   --font-display: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
   --font-body:    'Inter Variable', system-ui, -apple-system, sans-serif;
 
-  /* type scale */
-  --step--1: 0.82rem;
-  --step-0:  1.0625rem;
-  --step-1:  1.3rem;
-  --step-2:  1.6rem;
-  --step-3:  2.1rem;
-  --step-4:  clamp(2.6rem, 6vw, 3.6rem);
+  /* type scale — fluid; clamps so every size transitions smoothly with the viewport */
+  --step--1: clamp(0.8rem, 0.78rem + 0.08vw, 0.85rem);
+  --step-0:  clamp(1rem, 0.97rem + 0.18vw, 1.0625rem);
+  --step-1:  clamp(1.15rem, 1.06rem + 0.45vw, 1.3rem);
+  --step-2:  clamp(1.35rem, 1.18rem + 0.85vw, 1.6rem);
+  --step-3:  clamp(1.7rem, 1.4rem + 1.5vw, 2.1rem);
+  --step-4:  clamp(2.3rem, 1.5rem + 4vw, 3.6rem);
 
   /* spacing */
   --space-1: 0.5rem;
@@ -74,7 +74,11 @@ img { max-width: 100%; height: auto; display: block; }
   * { transition: none !important; animation: none !important; }
 }
 
-.container { max-width: 760px; margin: 0 auto; padding: 0 1.5rem; }
+.container { max-width: 760px; margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 2rem); }
+
+/* Content images: center them, and (via the inline fitter in Base) never display
+   wider than their crisp resolution allows — so low-res screenshots stay sharp. */
+.prose img, .hero { margin-inline: auto; }
 
 .eyebrow {
   font-family: var(--font-body);

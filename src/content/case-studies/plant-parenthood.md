@@ -2,6 +2,7 @@
 title: "Plant Parenthood"
 description: "Ensuring the health and happiness of all plant babies everywhere"
 slug: plant-parenthood
+category: coursework
 color: illusion
 hero: /assets/pp-hero-01.png
 blob: /assets/blob-pp.png

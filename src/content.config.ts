@@ -6,6 +6,9 @@ const caseStudies = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
+    category: z.enum(['live', 'wip', 'coursework']).optional(),
+    order: z.number().optional(),
+    draft: z.boolean().optional(),
     slug: z.string().optional(),
     color: z.string().optional(),
     hero: z.string().optional(),

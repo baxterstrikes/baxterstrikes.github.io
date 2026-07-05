@@ -2,6 +2,7 @@
 title: "Trash Panda"
 description: "Helping people create better recycling habits, one bit of trash at a time"
 slug: trash-panda
+category: coursework
 color: salomie
 hero: /assets/tp-hero-01.png
 blob: /assets/blob-tp.png
