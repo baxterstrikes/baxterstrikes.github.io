@@ -22,7 +22,7 @@ One parent-controlled source of truth that can hand any caregiver — or any for
 
 ## Why I started building this
 
-We found out one of my kids was severely allergic to peanuts. Over the next year we added several grasses and canine dander to the list.
+We found out my son had several allergies and allergic responses.
 
 Suddenly a dozen adults needed to know exactly the right things about one small person — the sitter, the grandparents, the school office, the camp nurse, the coach doing pickup. So I became the switchboard. The same facts, retyped into every form, texted to every new caregiver, screenshotted and going stale the second I hit send.
 
