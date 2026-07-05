@@ -1,6 +1,6 @@
 ---
 title: "Trash Panda"
-description: "Helping people create better recycling habits, one bit of trash at a time"
+description: "Point your camera at trash. Learn what to do with it."
 slug: trash-panda
 category: coursework
 color: salomie
@@ -28,7 +28,7 @@ Make recycling accessible to everyone.
 
 ## Using research to refine how we can help
 
-We anchored on Earth911 early. Their API could tell us, for any item in any ZIP code, whether it gets recycled, how, and who takes it — the informational spine everything else would hang from.
+We anchored on Earth911 early. Their API covers, for any item in any ZIP code, whether it gets recycled, how, and who takes it. Everything else could build on that.
 
 ### Data we could expect from Earth911
 
@@ -38,7 +38,7 @@ We anchored on Earth911 early. Their API could tell us, for any item in any ZIP 
 
 ### Analyzing the current competition
 
-The existing tools had done the hard data work and then buried it. Cluttered layouts, no explanation of what to do or why it mattered, interfaces years behind the people they hoped to reach. Good information, presented like a penance.
+The existing tools had the data and buried it — cluttered, unexplained, years out of date. Good information, hard to want.
 
 ![Competitor search screen listing plastic recycling results in a plain text list](/assets/tp-01-01.png)
 
@@ -48,37 +48,37 @@ The existing tools had done the hard data work and then buried it. Cluttered lay
 
 ## What could we build that promotes recycling?
 
-We wanted the phone to do the work. What if you could point your camera at the thing in your hand and let the app decide what it is and where it goes — no taxonomy of plastics required?
+We wanted the phone to do the work: point the camera at the thing in your hand, and let the app say what it is and where it goes.
 
 ### Key insights from user interviews
 
 Any amount of inaccuracy in the image recognition causes a significant amount of distrust.
 
-*5 of the 6 people we spoke to reported they would not use the product if the image recognition accuracy was below 80%.*
+*5 of the 6 people we spoke to would not use the product if image recognition accuracy fell below 80%.*
 
 Motivation to recycle is present, yet people are hard-pressed to change their habits.
 
-*People are motivated to recycle in a myriad of ways — just not motivated enough to study for it. The good intention is real; the homework never happens.*
+*People want to recycle. They don’t want to study for it.*
 
 ### Users will need reliable fallbacks in lieu of perfect image recognition
 
-So we designed for the miss too: camera first, keyword and category search waiting right behind it. Whatever route you took, you were never more than 3 taps from the answer.
+So we designed for the miss: camera first, keyword and category search right behind it. Whatever the route, you're never more than 3 taps from an answer.
 
 ![User flow from taking a photo to the item information page, with keyword and category search fallbacks](/assets/user_flow_graphic_3.png)
 
 ## Continuously asking what works
 
-This was my first time pair-designing, and we disagreed often — about direction, about emphasis, about whose instinct to trust. With 8 weeks on the clock, we couldn't afford to get stuck, so we built rules for disagreeing well.
+This was my first time pair-designing. We disagreed often, and with 8 weeks on the clock we couldn't afford to stay stuck — so we made rules for disagreeing.
 
 ### We both learned some important lessons during our collaboration
 
-- When you deadlock, split up. An hour or two designing alone, then reconvene and compare. The best parts of two stubborn drafts usually assemble into something neither of us would have reached politely.
-- Every decision needs a user-experience reason it can produce on demand. "I like it" is a mood, not a rationale.
-- Be kind, and take breaks. If you truly can't see the reasoning behind your partner's idea, the next move is a question — not a veto.
+- When you deadlock, split up. An hour designing alone, then reconvene and take the best of both drafts.
+- Every decision needs a user-experience reason. "I like it" isn't one.
+- Be kind, take breaks. If you can't see your partner's reasoning, ask before you veto.
 
 ### Home page progression
 
-We started out unsure whether to lead with image recognition or category search. The answer turned out to be neither: keep the design spare and put all 3 paths — camera, keyword, category — on the landing page, and let the user pick their own door. You can see that resolve more clearly in the final designs below.
+We started unsure whether to lead with image recognition or category search. The answer was neither: keep the page spare and offer all 3 paths — camera, keyword, category. The final designs below show where that landed.
 
 ![Early home page wireframe stacking a camera option above two search-by-term blocks](/assets/tp-03-01.png)
 
@@ -94,7 +94,7 @@ We started out unsure whether to lead with image recognition or category search.
 
 ### Changes to the category search flow
 
-Category search had one job: no friction. The live question was photos versus icons for representing items and materials — and testing answered it decisively in favor of photos. People recognize a battery; they decode a battery icon.
+The open question was photos versus icons for items and materials. Testing settled it: people recognize a photo of a battery faster than a battery icon.
 
 ![Category search wireframe with placeholder tiles under a select-the-material prompt](/assets/tp-05-01.png)
 
@@ -104,7 +104,7 @@ Category search had one job: no friction. The live question was photos versus ic
 
 ### Progression of camera & results 
 
-The flow had to stay this simple: take a picture, get a result. Behind that simplicity sat close work with the data science team — we couldn't promise the model would learn from user corrections, or that retaking a photo would change the verdict. So the design had to be honest about what the model didn't know.
+The flow stayed simple — take a picture, get a result — but it took close work with the data science team. We couldn't promise the model would learn from corrections, or that a retake would change the verdict. The design had to be honest about what the model didn't know.
 
 ![Camera wireframe telling users to center the item and clear the area before capture](/assets/tp-06-01.png)
 
@@ -120,7 +120,7 @@ The flow had to stay this simple: take a picture, get a result. Behind that simp
 
 ### Navigating through navigation styles
 
-Navigation took several tries to get right. Three destinations doesn't sound like a hard problem, but the bar was that you could always reach the camera without thinking about where you were.
+Three destinations, one requirement: the camera reachable from anywhere, without thought. It took several tries.
 
 ![Navigation wireframe with search, camera, and menu icons in a bottom bar](/assets/tp-08-01.png)
 
@@ -132,23 +132,23 @@ Navigation took several tries to get right. Three destinations doesn't sound lik
 
 Users were delighted by the image recognition feature.
 
-*People had genuine fun with a recycling app — a sentence I did not expect to write. Average accuracy hovered at 55% across all items, and users were still impressed every time the model got one right. Delight, it turns out, is calibrated to expectations, and nobody expects much from their trash.*
+*Average accuracy was 55%, and people were still impressed every time the model got one right. Nobody expects much from their trash.*
 
 Users love being able to visually identify items during category search.
 
-*Icons would have made a tidier design system; photos made a faster human. We optimized for speed of discovery and let cohesion take the loss.*
+*Icons would have been more cohesive; photos were faster. We chose speed.*
 
 Users want more information at their fingertips.
 
-*The feedback said this would genuinely change habits — and then asked for more: what the material actually is, why it resists recycling, who's working on making it recyclable. Give people one honest answer and they develop an appetite for the whole subject.*
+*People asked for more — what the material is, why it resists recycling, who's working on that. One good answer creates appetite for the next.*
 
 ## Final designs
 
-We shipped a real, working app — not a prototype, a download. It lived in the world for years before support finally wound down, which is a longer life than most eight-week student builds get.
+We shipped a working app. It stayed downloadable for years, until support wound down.
 
 ### Getting permissions without friction
 
-Onboarding had to be quick and painless, and it also had to ask for location and camera access — two requests apps usually fumble. We earned each one by explaining what it bought you before asking.
+Onboarding needed location and camera access. Each screen explains what the permission buys before asking for it.
 
 ![First onboarding screen introducing Trash Panda with an illustration of recycling bins](/assets/tp-09-01.png)
 
@@ -158,7 +158,7 @@ Onboarding had to be quick and painless, and it also had to ask for location and
 
 ### A camera feature that helps users identify recyclables
 
-After processing, the result arrives as a card sliding up from the bottom — minimal, legible, and obviously tappable for the full detail. The model does its guessing backstage; the user just sees an answer.
+After processing, the result slides up as a card — minimal, legible, tappable for the full detail.
 
 ![Final camera screen with a centering tip over batteries held in an open hand](/assets/tp-10-01.png)
 
@@ -168,7 +168,7 @@ After processing, the result arrives as a card sliding up from the bottom — mi
 
 ### Category search helps engage more users
 
-The realistic photos carried this flow. Users told us, repeatedly and without prompting, that pictures made it effortless to find the item they were holding.
+The photos carried this flow. Users said so, unprompted.
 
 ![Final home screen with a take-a-photo card, search bar, and photo category grid](/assets/tp-11-01.png)
 
@@ -178,7 +178,7 @@ The realistic photos carried this flow. Users told us, repeatedly and without pr
 
 ### Item information pages with proper visual hierarchy
 
-Each item page answers at a glance: what is this, and what do I do with it. The one call to action — locate a recycling center near you — is the whole point of the app, so nothing on the page competes with it.
+Each item page answers two questions at a glance: what is this, and what do I do with it. The single call to action — locate a recycling center — is the point of the app, so nothing competes with it.
 
 ![Alkaline battery information page with off-site recycle graphic and locate centers button](/assets/tp-12-01.png)
 
@@ -188,16 +188,16 @@ Each item page answers at a glance: what is this, and what do I do with it. The 
 
 ## What I learned...
 
-I got lucky in my collaborators — data scientists, developers, a design partner — and then we did the unglamorous work of deserving each other, iteration after iteration.
+This was my first real collaboration across disciplines. Three lessons stuck.
 
 ### Collaboration between disciplines
 
-Working across skill sets is what put my own developing UX skills in context. I learned to explain the reasoning behind my design decisions in terms an engineer could act on — and, just as usefully, to translate their explanations back into constraints I could design with. Fluency in both directions is the actual job.
+Working alongside data science and engineering taught me to explain design reasoning in terms others can act on — and to translate their constraints back into design. Fluency in both directions is the job.
 
 ### Understanding limitations
 
-Designs can look like magic right up until someone has to build them. The image model wasn't going to hit 80% because we wished it would, and the API only knew what it knew. Listening to the team about what was genuinely possible — then molding the design to that truth instead of resenting it — was a lesson I got to learn early, at student prices.
+Designs look like magic until someone has to build them. The model wasn't going to hit 80% because we wished it would. The discipline was listening to what was actually possible, then designing to that.
 
 ### The importance of the user
 
-The biggest lesson: decide from data, not from the loudest voice in the room. We tested every iteration, and every test moved the design somewhere none of us would have taken it on instinct. Everybody has an opinion; the one that matters belongs to the person holding the trash.
+Decide from data. Every test moved the design somewhere instinct wouldn't have taken it. Everybody has an opinion; the person holding the trash has the one that counts.

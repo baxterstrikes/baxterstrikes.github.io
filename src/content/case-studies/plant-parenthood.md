@@ -1,6 +1,6 @@
 ---
 title: "Plant Parenthood"
-description: "Helping people keep their houseplants alive on purpose instead of by accident"
+description: "Track what each plant needs. Keep it alive."
 slug: plant-parenthood
 category: coursework
 color: illusion
@@ -14,11 +14,11 @@ screenshots:
 
 ### Problem space
 
-People love plants, acquire plants, and then quietly preside over their decline.
+People love plants, and still let them die.
 
 ### Solution to explore
 
-Give plant parents a way to track each plant's happiness — so staying alive stops depending on someone's memory.
+Track each plant's needs, so survival doesn't depend on memory.
 
 ### Project details
 
@@ -28,7 +28,7 @@ Give plant parents a way to track each plant's happiness — so staying alive st
 
 ## Do people actually want their plants to thrive?
 
-An impolite question, but the right one to start with — a plant-care app is only worth building if the answer is more complicated than "yes." So before designing anything, I went and asked.
+The right first question — a plant-care app is only worth building if the answer is complicated. So before designing anything, I asked.
 
 ### Questions I asked potential users
 
@@ -41,42 +41,42 @@ An impolite question, but the right one to start with — a plant-care app is on
 
 Plant owners care for their plants based on intuition rather than knowledge.
 
-*2 of the 3 people I spoke to never looked up how to care for their plants. They watered by feel and called it trial and error — mostly error, if you ask the plants.*
+*2 of the 3 people I spoke to never looked up how to care for their plants. Trial and error — mostly error.*
 
 There is not a big incentive to making sure your plants stay alive.
 
-*Every single person interviewed said that if a plant dies, they'll just buy another one. No grief, no guilt, a $12 replacement. Which meant the app couldn't run on obligation — it had to be easy enough and genuinely fun enough that people used it anyway. The plant's life depended on our UX being pleasant.*
+*Everyone said the same thing: if a plant dies, buy another. No guilt, a $12 replacement. So the app couldn't run on obligation — it had to be easy and genuinely pleasant, or nothing.*
 
 
 ## Building something for people who want plants
 
-The interviews left me with three design problems, each phrased as a question I had to answer.
+The interviews left three design problems.
 
 ### The obstacle of actual work
 
-People would happily keep more plants if keeping them were less work. The desire to care for living things is nearly universal; the appetite for chores is not.
+People would keep more plants if plants were less work. The desire to care for living things is common; the appetite for chores is not.
 
-*What can this product do to let people fulfill the desire without drowning in the upkeep?*
+*What can the product carry so the person doesn't have to?*
 
 ### Notification overload causes avoidance
 
-A reminder app lives and dies on whether its notifications feel like help or like nagging — and users delete naggers without remorse.
+Reminders read as help or as nagging, and people delete naggers without remorse.
 
-*How do we make sure a thriving plant is enough of a payoff that the pings stay welcome?*
+*How does a thriving plant stay worth the pings?*
 
 ### Poor communication causes confusion
 
-Many users confessed their plants die by committee: two people water it Monday, no one waters it for three weeks, everyone assumed someone else had it handled.
+Plants die by committee — watered twice on Monday, then not for three weeks, everyone assuming someone else had it.
 
-*How do we offer a simple fix for a failure that's really about households, not horticulture?*
+*Can one shared record fix what is really a household problem?*
 
 ### Designing within the product scope
 
-My research kept pulling me somewhere the project brief didn't go. The disciplined move was to honor the brief anyway: I trimmed the feature ideas that outgrew the scope, kept every insight in my back pocket, and let the learning shape the prototype from underneath rather than blowing up the assignment.
+The research pulled somewhere the project brief didn't go. I trimmed the feature ideas that outgrew the scope, honored the brief, and let the learning shape what remained.
 
 ### Getting creative with possible layouts
 
-Before committing to a layout, I sketched fast and wide — something resembling the crazy 8s method, pen on paper, quantity over polish. Cheap ideas first; the expensive ones can audition later.
+Fast, wide sketching first — something resembling crazy 8s. Cheap ideas before expensive ones.
 
 ![Ten hand-drawn sketches exploring layouts for the plant profile and home page](/assets/pp-01-01.png)
 
@@ -100,7 +100,7 @@ Before committing to a layout, I sketched fast and wide — something resembling
 
 ### Getting insight into the user’s comfort zone
 
-Low-fidelity testing had 3 questions to answer. Does onboarding gather enough that you don't land on a barren home page? Does the home page lead with the features people actually came for? And can users shape their preferences and their plants the way they want — not the way I guessed they would?
+Low-fidelity testing had 3 questions. Does onboarding gather enough to avoid an empty home page? Does the home page lead with what people came for? Can users shape their preferences and their plants their own way?
 
 ![Low-fidelity onboarding screen collecting phone number and notification preferences](/assets/pp-02-01.png)
 
@@ -118,7 +118,7 @@ Low-fidelity testing had 3 questions to answer. Does onboarding gather enough th
 
 ### Showing relevant plant details in the plant profile
 
-The profile is where the app does its real work: each plant's happiness and maintenance levels drive the notifications, so the reminder that reaches you is about *this* plant's actual needs — not a generic Tuesday guilt-ping.
+Each plant's happiness and maintenance levels drive its notifications — so a reminder is about this plant's needs, not a schedule.
 
 ![Final plant profile showing an unhappy face selected on the happiness scale](/assets/pp-03-01.png)
 
@@ -128,7 +128,7 @@ The profile is where the app does its real work: each plant's happiness and main
 
 ### Showcasing & adding plants
 
-Plants are beautiful, so the home page treats them that way: a photo grid. The sorting options (last watered, happiness, name) sneak the function in under the finery.
+The home page is a photo grid — plants are the point. Sorting (last watered, happiness, name) does the work underneath.
 
 ![Home page listing all plants as a photo grid with names and an add plant button](/assets/pp-04-01.png)
 
@@ -138,7 +138,7 @@ Plants are beautiful, so the home page treats them that way: a photo grid. The s
 
 ### Editing both the plant & user profiles
 
-Everything a user tells the app should be revisable — the plant's name, species, photo, or the plant itself, whether it was rehomed or simply didn't make it. And since onboarding lets you skip most things, the user profile has to be fully editable later; a skipped step should be a postponed decision, never a locked door.
+Everything the user tells the app is revisable — the plant's name, species, photo, or the plant itself. And since onboarding lets you skip, the profile stays fully editable later. A skipped step is a postponed decision, not a locked door.
 
 ![Edit plant screen with photo update, name and species fields, and delete option](/assets/pp-05-01.png)
 
@@ -148,7 +148,7 @@ Everything a user tells the app should be revisable — the plant's name, specie
 
 ### Simplifying sign-up
 
-My first flows imagined a lavish onboarding where users pre-filled everything, so their home page would bloom fully formed. Users found this exactly as delightful as filling out intake paperwork. It was a proper lesson in how to disgruntle people with good intentions — one every designer apparently has to pay for personally. The final version asks for a username, a phone number, and a password, then gets out of the way.
+My first flows imagined a rich onboarding, so the home page would arrive fully formed. Users experienced it as paperwork. The final version asks for a username, a phone number, and a password, then gets out of the way.
 
 ![Sign-up screen asking only for username, phone number, and password](/assets/pp-06-01.png)
 
@@ -158,16 +158,16 @@ My first flows imagined a lavish onboarding where users pre-filled everything, s
 
 ## What I learned...
 
-Sole designer, five developers, one week to ship. Some lessons only arrive under those exact conditions.
+Sole designer, five developers, one week to ship.
 
 ### Understanding how design pairs with development.
 
-I arrived with everything assembled nicely — and then the developers arrived with reality. Learning their constraints meant adapting fast, and it taught me that the translation layer between UX intent and shipped product is a discipline of its own. Getting everyone genuinely on the same page took time and patience, and it was worth every hour: a design the team can't build is a very pretty rumor.
+I arrived with everything assembled; the developers arrived with constraints. Translating UX intent into something buildable is its own discipline, and getting everyone genuinely on the same page took time and patience. A design the team can't build isn't a design yet.
 
 ### Leveraging research to make improvements.
 
-Research didn't refine my idea; it replaced it. Nearly everything I learned about what users wanted redirected what I wanted to design. Hearing that criticism was useful and a little painful in the way useful things often are — and I've kept the thicker skin it gave me.
+Research replaced my idea rather than refining it. The criticism was useful and a little painful, and I kept the thicker skin.
 
 ### Adapting to restrictions and limitations.
 
-Watching most of my research-fed feature ideas fall outside the scope stung. But this is the industry's default weather: new information, new constraints, new direction, arriving without notice or apology. The skill isn't avoiding the change — it's staying flexible enough that the change makes the work better instead of just smaller.
+Most of my research-fed feature ideas fell outside the scope. That happens constantly in real product work — new information arrives without notice and redirects everything. Stay flexible enough that the change improves the work instead of shrinking it.
