@@ -1,6 +1,6 @@
 ---
 title: "NextBook"
-description: "Assisting book lovers in finding their next great book"
+description: "Finding readers their next book before the to-be-read pile becomes load-bearing"
 slug: nextbook
 category: coursework
 color: cornflower_lilac
@@ -12,11 +12,11 @@ screenshots:
 
 ### Problem space
 
-Book readers want help finding their next book
+Readers finish a book and stall out — choosing the next one is its own small crisis.
 
 ### Solution to explore
 
-Offer readers curated recommendations specific to their interests and past reads
+Curated recommendations built from what a reader actually loves and has actually read.
 
 ### Project details
 
@@ -26,7 +26,7 @@ Offer readers curated recommendations specific to their interests and past reads
 
 ## Using research to find the highest value features
 
-My first step was to take a deep dive into the research the previous team had compiled. I learned that our potential user base had 2 groups: book lovers who are always searching for new books and people who wish they read more books.
+I inherited a pile of research from the previous team, so my first move was to actually read it — a courtesy previous-team research doesn't always receive. It split our potential users cleanly in two: book lovers perpetually hunting the next one, and people who wish they read more than they do.
 
 ### Key insights from user interviews
 
@@ -40,13 +40,13 @@ People want motivation to reach their book reading goals.
 
 ### From the previous design to the new
 
-I noticed in the original design that the primary color made the product feel busy as well as outdated. As I researched our competition and similar interfaces, I realized that visually we were dealing with a plethora of mismatched colors and styles in the book cover illustrations, resulting in an overwhelming look and feel.
+The original design's primary color made the product feel busy and dated — but the deeper problem wasn't ours to fix. Every screen of a book app is wallpapered in cover art: dozens of illustrations in clashing palettes and styles, none of which we chose. The competition all struggled with the same visual din.
 
 ![Original BetterReads design with green UI and mismatched book covers](/assets/nb-01-01.png)
 
 ### Making color work for us instead of against us
 
-I tried applying new colors to the original design, but I soon realized I needed to bleed out nearly all of the color from the UI to compensate for the vibrancy and variation in the book covers.
+I tried new palettes on the old design first. Each one just added another voice to the argument. The real answer was almost monastic: bleed nearly all the color out of the UI itself, and let the covers be the loud ones — they were going to be anyway.
 
 ![Green color exploration applied to a book details screen](/assets/nb-02-01.png)
 
@@ -56,13 +56,13 @@ I tried applying new colors to the original design, but I soon realized I needed
 
 ## Helping book lovers the best way we can
 
-After gathering more user data, we knew that our focus should be on showcasing book recommendations as the solution to the user’s problem. Users want to quickly and easily find their next book, and to accomplish this they want personally curated book recommendations. 
+The data kept pointing the same direction: recommendations are the product, everything else is furniture. Users wanted their next book fast, and they wanted it chosen for them, personally.
 
-I decided that I would work in low fidelity as long as possible to ensure the user would focus on the interactions and not the various illustrations during usability testing.
+I stayed in low fidelity as long as I could get away with — during testing, I needed people reacting to the interactions, not to whichever cover illustration happened to be shouting nearby.
 
 ### Book recommendations right at home
 
-My first iteration focused on providing the user a snapshot of their entire account. It was busy and lacked cohesion. I decided to remove all other elements that did not solve for the user’s primary problem: finding their next book. I was heavily inspired by Netflix here and implemented horizontal scrolling lists.
+My first iteration tried to show the user a snapshot of their entire account. It was busy, incoherent, and wrong. So I cut everything that didn't serve the primary problem — find the next book — and borrowed shamelessly from Netflix: horizontal shelves you scroll sideways, because browsing should feel like grazing, not like filing.
 
 ![Low-fidelity home page wireframe with recommendation rows and collection grids](/assets/nb-03-01.png)
 
@@ -74,17 +74,17 @@ My first iteration focused on providing the user a snapshot of their entire acco
 
 Users loved the idea of book reading goals on the home page.
 
-*Motivation is key to accomplishing goals, and pressure is one of the ways we stay motivated. All users tested that they would like to have their goal progression displayed on the home page.*
+*Every user tested wanted their goal progress displayed on the home page. People don't just tolerate a little pressure toward their reading goals — they request it.*
 
 Users want to know why we are recommending certain books.
 
-*Users are asked to give us their preferred genres during onboarding so we can start to build their personal recommendation model. Our model knows why we are recommending a book, but the user wants to know as well.*
+*Onboarding collects preferred genres to seed each personal recommendation model — so the model always knows why it's suggesting a book. Users wanted in on that reasoning. A recommendation with no "because" reads as an ad.*
 
 ### Private collections and personal notes
 
-In the book details view, I originally thought that users would want to write their own private book notes. I learned from the users I spoke to that they found little value in this feature and instead wanted to group books in their own private collections using tags!
+I was sure users would want to write private notes on their books. They did not. What they wanted was to sort books into private collections with tags — organizing as its own quiet pleasure. I'd designed for the reader I imagined instead of the ones in front of me, and the interviews corrected me quickly.
 
-Once I nailed down the personalization and recommendations sections, I realized I had plenty of room to blow up the book cover, which created an incredibly unique visuality to each book details page.
+With notes gone and the recommendations settled, there was suddenly room to blow the cover art up huge — which hands every book details page a ready-made identity. The publishers did the art direction; I just stopped crowding it.
 
 ![Book details wireframe with private notes panel and related books](/assets/nb-04-01.png)
 
@@ -96,15 +96,15 @@ Once I nailed down the personalization and recommendations sections, I realized 
 
 Users want relevant information and literally nothing else.
 
-*What I found interesting was the different ways people conceived of a book details page. Some wanted more information, but many wanted a more minimalistic design that focused on adding books to their collections.*
+*People conceived of a book details page in surprisingly different ways — a few wanted everything, but most wanted a spare view focused on one act: adding the book to their collections. The details page is a doorway, not a destination.*
 
 Related books and recommended books mean the same thing to users.
 
-*I was surprised to learn that people were conflating these two terms. To me, a related book is a book by the same author, in the same series, or takes place in the same fictional universe. A recommendations model may include these factors, and so many more!*
+*This one surprised me. To me, "related" is taxonomy — same author, same series, same universe — while a recommendation model weighs those and a dozen subtler signals. To users, both just mean "books I might like." The distinction I cared about was mine, not theirs, so it didn't belong in the interface.*
 
 ### How do readers want their book collections displayed?
 
-As soon as I started adding in book covers and moving to high fidelity, I realized I had a navigation issue. I broke out what started as the user profile page into 2 parts: a private book collections page and a user profile modal (seen in the final designs below).
+The moment real covers entered the high-fidelity designs, a navigation problem surfaced: the profile page was trying to be two things at once. I split it — a proper page for private collections, and a modal for the user profile (both visible in the final designs below).
 
 ![Collections page iteration showing flat side-by-side cover pairs](/assets/nb-05-01.png)
 
@@ -116,42 +116,42 @@ As soon as I started adding in book covers and moving to high fidelity, I realiz
 
 Users thought the stacking of the books created an attention-grabbing feature.
 
-*Although many of my peers and advisors thought that the flat card design and the 3D stack design were both acceptable, the 3D effect was the most interesting and added an element of fun to the page.*
+*Peers and advisors called the flat cards and the 3D stacks equally acceptable — which is preference-testing for "we have no strong feelings." Users did: the 3D stack looked like books, and a shelf you'd want to touch beat a grid you'd merely approve of.*
 
 ## Final designs
 
 ### Home is where recommendations are the most important
 
-The goal of the home page was to showcase book recommendations. You can see here that our recommendations take up the entire lower half of the page. We also made it easy for the user to choose their next book from their “Up next” collection.
+The home page does one thing with conviction: recommendations own the entire lower half. Up top, the "Up next" collection makes starting your next book a single decision instead of a browse.
 
 ![Final NextBook home page with recommendation shelves and reading goal progress](/assets/nb-06-01.png)
 
 ### Making space for more valuable features by creating a profile modal
 
-The decision to move the user details to a modal cleared the way for a super clean collections page view.
+Moving the user details into a modal cost nothing and bought the collections page its whole clean slate. Some of the best layout decisions are just evictions.
 
 ![Final profile modal with user details over a dimmed home page](/assets/nb-07-01.png)
 
 ### Making collections delightful and practical
 
-I was so pleased to find that multiple users thought this 3D-style stacking visual was intriguing and it didn’t distract from the purpose of the page.
+The 3D stacks survived contact with real users: intriguing enough to draw the eye, restrained enough not to hijack the page. Delight that pays rent.
 
 ![Final collections page with 3D book stacks and genre list](/assets/nb-08-01.png)
 
 ### Book details & enabling users to add books to private collections
 
-This is the book details page, where users can add the book to any collection. Users felt it was important to be able to use a tag-like system since it is something they recognize easily.
+The book details page, where any book can be added to any collection. The tag-style controls were the users' idea — a pattern they already knew from everywhere else, doing exactly what they expected. I know better than to argue with that.
 
 ![Final book details page with large cover, rating, and collection tags](/assets/nb-09-01.png)
 
 ## What I learned...
 
-I was grateful for the opportunity to design solely for desktop, something I hadn’t really done in my previous projects.
+This was my first project designed purely for desktop — and my first real lesson in what working alone actually costs.
 
-### How to break my tendency to design myself into a box I can’t get out of.
+### How to break my tendency to design myself into a box I can't get out of.
 
-I was excited to once again design something by myself, it was my impression that the more people you add into the mix, the longer things can take. I couldn’t have been more wrong. I found myself going too deep into details too early, I felt unsure how to move forward several times, and my ability to be creative took a nosedive. I realized how important it is to be constantly collaborating with not only your developers, but with other designers.
+I went in excited to design solo, on the theory that more people means more delay. I could not have been more wrong. Alone, I burrowed into details too early, stalled at every fork, and watched my creativity flatten — no one to argue with, so no argument to sharpen against. Collaboration isn't overhead on the process. It is the process, and that includes other designers, not just your developers.
 
-### Don’t get spooked by a due date.
+### Don't get spooked by a due date.
 
-I was still wireframing in week 3 and the project was due in completion at the end of week 4. I started doubting my decisions, process, and progress. I had to remind myself that pacing is important and everything is a learning experience. I will say that I had to pull it together quickly near the end, but everything turned out great!
+Week 3, still wireframing, delivery due at the end of week 4. The doubt arrived on schedule — about my decisions, my process, my pace. What I learned is that the wobble is part of the work, not a verdict on it: hold your pacing, finish the thinking, then sprint the ending. I pulled it together fast at the close, and the project landed whole.
