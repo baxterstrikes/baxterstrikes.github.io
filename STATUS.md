@@ -1,6 +1,24 @@
 # Build Status — lynnb.design (resume here)
 
-_Last updated: 2026-06-25 (Kiddex draft session)_
+_Last updated: 2026-07-05 (polish-for-launch session)_
+
+## Launch decision (2026-07-05)
+Lynn: **no new case studies or narration before launch** — polish what exists, then publish. Items 2–5 of the old "what's next" are POST-launch.
+
+## Polish pass — DONE 2026-07-05
+- All prior work committed (was sitting uncommitted for 10 days).
+- 9 typos/copy defects fixed in the coursework studies (incl. a duplicated section in Plant Parenthood).
+- All 67 coursework image alts rewritten from junk filenames to real descriptions (agents viewed each PNG).
+- Footer contrast AA-fixed (`--color-faint` → `#766C5F`, 4.78:1).
+- 117 PNGs palette-compressed behind a visual-quality gate: site 36MB → 14MB. Gate skipped 6 (blobs, portrait, flow diagrams) that would degrade.
+- Case-study prose images lazy-loaded via `scripts/lazy-images.mjs` post-build step (Astro 7's Sätteri markdown processor has no plugin hook without replacing the image pipeline — don't move this into `astro.config.mjs`).
+- Latin Fraunces/Inter woff2 preloaded; `<main>` landmark on case-study pages.
+- Verified: 0 horizontal overflow at 320px on all 8 pages; prod Lighthouse home 100/100/100/100, kiddex 99/97/100/100, about 83/100/100/100 (about's LCP is the font-swap repaint under simulated slow-4G — accepted).
+- Known/accepted: `heading-order` Lighthouse flag from the h3 opener blocks (Problem space / Solution / Project details) — house style, left alone.
+- Flagged for Lynn: tp-11-03 and tp-12-01 are the same screenshot; tp-05-03 sits oddly under the category-search heading.
+
+## Deploy target (confirmed 2026-07-05)
+lynnb.design is **GitHub Pages** — CNAME → `baxterstrikes.github.io`, serving the July-2022 build. Cutover = push new `dist` to that Pages setup (ideally via Actions workflow building from the Portfolio repo); **no DNS change needed**. Awaiting Lynn's go + repo location/access.
 
 ## What this is
 Lynn Baxter's personal/professional portfolio. Rebuilt from scratch on Astro after recovering the content from a dead Gatsby + Contentful stack. Target audience: **product-design roles at progressive edtech / family-tech.** Full strategy in `BRIEF.md`.
