@@ -41,11 +41,11 @@ An impolite question, but the right one to start with — a plant-care app is on
 
 Plant owners care for their plants based on intuition rather than knowledge.
 
-*2 of the 3 people I spoke to never looked up how to care for their plants. They watered on vibes and called it trial and error — mostly error, if you ask the plants.*
+*2 of the 3 people I spoke to never looked up how to care for their plants. They watered by feel and called it trial and error — mostly error, if you ask the plants.*
 
 There is not a big incentive to making sure your plants stay alive.
 
-*Every single person interviewed said that if a plant dies, they'll just buy another one. No grief, no guilt, a $12 replacement. Which meant the app couldn't run on obligation — it had to be easy enough and genuinely fun enough that people used it anyway. The plant's life depended on our UX being pleasant. No pressure.*
+*Every single person interviewed said that if a plant dies, they'll just buy another one. No grief, no guilt, a $12 replacement. Which meant the app couldn't run on obligation — it had to be easy enough and genuinely fun enough that people used it anyway. The plant's life depended on our UX being pleasant.*
 
 
 ## Building something for people who want plants
@@ -118,7 +118,7 @@ Low-fidelity testing had 3 questions to answer. Does onboarding gather enough th
 
 ### Showing relevant plant details in the plant profile
 
-The profile is where the app earns its keep: each plant's happiness and maintenance levels drive the notifications, so the reminder that reaches you is about *this* plant's actual needs — not a generic Tuesday guilt-ping.
+The profile is where the app does its real work: each plant's happiness and maintenance levels drive the notifications, so the reminder that reaches you is about *this* plant's actual needs — not a generic Tuesday guilt-ping.
 
 ![Final plant profile showing an unhappy face selected on the happiness scale](/assets/pp-03-01.png)
 
@@ -128,7 +128,7 @@ The profile is where the app earns its keep: each plant's happiness and maintena
 
 ### Showcasing & adding plants
 
-Plants are beautiful, so the home page treats them that way — a photo grid, not a chore list. The sorting options (last watered, happiness, name) sneak the function in under the finery.
+Plants are beautiful, so the home page treats them that way: a photo grid. The sorting options (last watered, happiness, name) sneak the function in under the finery.
 
 ![Home page listing all plants as a photo grid with names and an add plant button](/assets/pp-04-01.png)
 
@@ -158,7 +158,7 @@ My first flows imagined a lavish onboarding where users pre-filled everything, s
 
 ## What I learned...
 
-Sole designer, five developers, one week to ship. Some things you can only learn by standing in that particular weather.
+Sole designer, five developers, one week to ship. Some lessons only arrive under those exact conditions.
 
 ### Understanding how design pairs with development.
 
@@ -166,7 +166,7 @@ I arrived with everything assembled nicely — and then the developers arrived w
 
 ### Leveraging research to make improvements.
 
-Research didn't refine my idea; it replaced it. Nearly everything I learned about what users wanted redirected what I wanted to design. Hearing that criticism was useful and a little painful in the way useful things often are — and the thicker skin it left behind has been earning interest ever since.
+Research didn't refine my idea; it replaced it. Nearly everything I learned about what users wanted redirected what I wanted to design. Hearing that criticism was useful and a little painful in the way useful things often are — and I've kept the thicker skin it gave me.
 
 ### Adapting to restrictions and limitations.
 

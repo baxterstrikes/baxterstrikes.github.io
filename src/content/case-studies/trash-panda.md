@@ -62,7 +62,7 @@ Motivation to recycle is present, yet people are hard-pressed to change their ha
 
 ### Users will need reliable fallbacks in lieu of perfect image recognition
 
-So we designed for the miss, not just the hit: camera first, keyword and category search waiting right behind it. Whatever route you took, you were never more than 3 taps from the answer.
+So we designed for the miss too: camera first, keyword and category search waiting right behind it. Whatever route you took, you were never more than 3 taps from the answer.
 
 ![User flow from taking a photo to the item information page, with keyword and category search fallbacks](/assets/user_flow_graphic_3.png)
 
@@ -104,7 +104,7 @@ Category search had one job: no friction. The live question was photos versus ic
 
 ### Progression of camera & results 
 
-The flow had to stay this simple: take a picture, get a result. Behind that simplicity sat close work with the data science team — we couldn't promise the model would learn from user corrections, or that retaking a photo would change the verdict. So the design had to be honest about uncertainty instead of theatrical about intelligence.
+The flow had to stay this simple: take a picture, get a result. Behind that simplicity sat close work with the data science team — we couldn't promise the model would learn from user corrections, or that retaking a photo would change the verdict. So the design had to be honest about what the model didn't know.
 
 ![Camera wireframe telling users to center the item and clear the area before capture](/assets/tp-06-01.png)
 
@@ -120,7 +120,7 @@ The flow had to stay this simple: take a picture, get a result. Behind that simp
 
 ### Navigating through navigation styles
 
-Navigation took several tries to earn its keep. Three destinations doesn't sound like a hard problem, but the bar was that you could always reach the camera without thinking about where you were.
+Navigation took several tries to get right. Three destinations doesn't sound like a hard problem, but the bar was that you could always reach the camera without thinking about where you were.
 
 ![Navigation wireframe with search, camera, and menu icons in a bottom bar](/assets/tp-08-01.png)
 
@@ -132,7 +132,7 @@ Navigation took several tries to earn its keep. Three destinations doesn't sound
 
 Users were delighted by the image recognition feature.
 
-*People had genuine fun with a recycling app, which I did not have on my bingo card. Average accuracy hovered at 55% across all items, and users were still impressed every time the model got one right — delight, it turns out, is calibrated to expectations, and nobody expects much from their trash.*
+*People had genuine fun with a recycling app — a sentence I did not expect to write. Average accuracy hovered at 55% across all items, and users were still impressed every time the model got one right. Delight, it turns out, is calibrated to expectations, and nobody expects much from their trash.*
 
 Users love being able to visually identify items during category search.
 

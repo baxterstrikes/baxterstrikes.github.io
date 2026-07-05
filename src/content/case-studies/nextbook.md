@@ -62,7 +62,7 @@ I stayed in low fidelity as long as I could get away with — during testing, I 
 
 ### Book recommendations right at home
 
-My first iteration tried to show the user a snapshot of their entire account. It was busy, incoherent, and wrong. So I cut everything that didn't serve the primary problem — find the next book — and borrowed shamelessly from Netflix: horizontal shelves you scroll sideways, because browsing should feel like grazing, not like filing.
+My first iteration tried to show the user a snapshot of their entire account. It was busy, incoherent, and wrong. So I cut everything that didn't serve the primary problem — find the next book — and borrowed shamelessly from Netflix: horizontal shelves you scroll sideways.
 
 ![Low-fidelity home page wireframe with recommendation rows and collection grids](/assets/nb-03-01.png)
 
@@ -96,7 +96,7 @@ With notes gone and the recommendations settled, there was suddenly room to blow
 
 Users want relevant information and literally nothing else.
 
-*People conceived of a book details page in surprisingly different ways — a few wanted everything, but most wanted a spare view focused on one act: adding the book to their collections. The details page is a doorway, not a destination.*
+*People conceived of a book details page in surprisingly different ways — a few wanted everything, but most wanted a spare view focused on one act: adding the book to their collections.*
 
 Related books and recommended books mean the same thing to users.
 
