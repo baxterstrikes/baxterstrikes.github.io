@@ -18,7 +18,7 @@ People love and want plants, but oftentimes don’t keep them in great health
 
 ### Solution to explore
 
-Give plant parents a way to track their plants happiness so their plants stay alive and thrive
+Give plant parents a way to track their plants’ happiness so their plants stay alive and thrive
 
 ### Project details
 
@@ -64,12 +64,6 @@ We have to be careful that the benefits of being notified of something outweigh 
 
 *How can we make sure that a thriving plant is enough of a benefit that our users won't abandon this product?*
 
-### Task management is emotionally tricky
-
-We have to be careful that the benefits of being notified of something outweigh the annoyance.
-
-*How can we make sure that a thriving plant is enough of a benefit that our users won't abandon this product?*
-
 ### Poor communication causes confusion
 
 Many potential users confessed that accidents caused by poor communication kill many of their plants.
@@ -84,7 +78,7 @@ The research I gathered led me in a different direction than the original scope 
 
 Before settling on a single layout, I sketched out several different styles. Using something resembling the crazy 8s method, I tried to come up with unique and innovative ideas within a short time frame.
 
-![tp-01-01](/assets/pp-01-01.png)
+![Ten hand-drawn sketches exploring layouts for the plant profile and home page](/assets/pp-01-01.png)
 
 ## Testing what kind of plant care people want
 
@@ -106,13 +100,13 @@ Before settling on a single layout, I sketched out several different styles. Usi
 
 ### Getting insight into the user’s comfort zone
 
-There were 3 elements I was testing in low-fidelity. Did I ask for enough information during onboarding to ensure the user didn’t land on en empty home page? Does the home page highlight the features that the users are looking for? Can the user customize their preferences and their plants in the ways they want?
+There were 3 elements I was testing in low-fidelity. Did I ask for enough information during onboarding to ensure the user didn’t land on an empty home page? Does the home page highlight the features that the users are looking for? Can the user customize their preferences and their plants in the ways they want?
 
-![pp-02-01](/assets/pp-02-01.png)
+![Low-fidelity onboarding screen collecting phone number and notification preferences](/assets/pp-02-01.png)
 
-![pp-02-02](/assets/pp-02-02.png)
+![Low-fidelity home page with a daily watering checklist grid of plants](/assets/pp-02-02.png)
 
-![pp-02-03](/assets/pp-02-03.png)
+![Low-fidelity plant profile with happiness faces, maintenance levels, and watering history](/assets/pp-02-03.png)
 
 ### The changes I made due to my research
 
@@ -126,41 +120,41 @@ There were 3 elements I was testing in low-fidelity. Did I ask for enough inform
 
 A key feature of Plant Parenthood is using the happiness and maintenance levels of a plant to set up notifications to the user.
 
-![pp-03-01](/assets/pp-03-01.png)
+![Final plant profile showing an unhappy face selected on the happiness scale](/assets/pp-03-01.png)
 
-![pp-03-02](/assets/pp-03-02.png)
+![Final plant profile with a neutral happiness face selected and low maintenance set](/assets/pp-03-02.png)
 
-![pp-03-03](/assets/pp-03-03.png)
+![Final plant profile with a happy face selected and a mark watered button](/assets/pp-03-03.png)
 
 ### Showcasing & adding plants
 
 Plants are beautiful so I wanted to showcase them on the home page. For functionality, I added the ability to sort the list in various ways.
 
-![pp-04-01](/assets/pp-04-01.png)
+![Home page listing all plants as a photo grid with names and an add plant button](/assets/pp-04-01.png)
 
-![pp-04-02](/assets/pp-04-02.png)
+![Home page sort menu open with options like last watered, happiness, and plant name](/assets/pp-04-02.png)
 
-![pp-04-03](/assets/pp-04-03.png)
+![Create a new plant form with avatar picker, name, maintenance level, and species fields](/assets/pp-04-03.png)
 
 ### Editing both the plant & user profiles
 
-Being able to fix a mistake gives users flexibility. I wanted to make sure the user could change the plant s name, species, photo, or delete the plant if it dies or was given away. Being able to update your user profile is essential, especially since we give users the option to skip most of the onboarding process.
+Being able to fix a mistake gives users flexibility. I wanted to make sure the user could change the plant’s name, species, photo, or delete the plant if it dies or was given away. Being able to update your user profile is essential, especially since we give users the option to skip most of the onboarding process.
 
-![pp-05-01](/assets/pp-05-01.png)
+![Edit plant screen with photo update, name and species fields, and delete option](/assets/pp-05-01.png)
 
-![pp-05-02](/assets/pp-05-02.png)
+![Edit plant screen asking the user to confirm deleting the plant](/assets/pp-05-02.png)
 
-![pp-05-03](/assets/pp-05-03.png)
+![Edit user profile screen with photo, username, phone validation error, and reminder toggle](/assets/pp-05-03.png)
 
 ### Simplifying sign-up
 
 Like I mentioned previously, in my initial user flows I imagined a very detailed onboarding. I wanted the user to pre-fill all the information necessary to make sure they landed on a beautiful home page. It was a great lesson in how to make users disgruntled, something I am sure all designers need to learn one way or the other.
 
-![pp-06-01](/assets/pp-06-01.png)
+![Sign-up screen asking only for username, phone number, and password](/assets/pp-06-01.png)
 
-![pp-06-02](/assets/pp-06-02.png)
+![Onboarding step for adding a first plant with a skip option](/assets/pp-06-02.png)
 
-![pp-06-03](/assets/pp-06-03.png)
+![Onboarding screen explaining SMS reminders with opt-in and opt-out buttons](/assets/pp-06-03.png)
 
 ## What I learned...
 
