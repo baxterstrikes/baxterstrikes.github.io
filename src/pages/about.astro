@@ -5,7 +5,7 @@ import Base from '../layouts/Base.astro';
 <Base title="About — Lynn Baxter">
   <main class="container about">
     <p class="eyebrow">About</p>
-    <img class="portrait" src="/assets/portrait.png" alt="Lynn Baxter" width="120" height="120" />
+    <img class="portrait" src="/assets/portrait-couch.jpg" alt="Painted portrait of Lynn Baxter working on a laptop from the couch" width="220" height="263" />
     <div class="prose">
       <p class="lead">I build tools for families and test them on mine.</p>
       <p>
@@ -36,7 +36,7 @@ import Base from '../layouts/Base.astro';
 
   <style>
     .about { padding-block: clamp(2rem, 6vw, 3rem) clamp(3rem, 8vw, 4rem); max-width: 680px; }
-    .portrait { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 1rem 0 2rem; }
+    .portrait { width: 220px; height: auto; border-radius: var(--radius); margin: 1rem 0 2rem; }
     .prose .lead {
       font-family: var(--font-display);
       font-size: clamp(1.6rem, 1.2rem + 1.9vw, 2.1rem);
