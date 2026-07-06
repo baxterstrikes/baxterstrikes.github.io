@@ -31,8 +31,8 @@ import Base from '../layouts/Base.astro';
         families I design for deserve more than my anecdotes.
       </p>
       <p>
-        If you&rsquo;re making something kind and serious for families, I&rsquo;d love to hear
-        about it.
+        If you&rsquo;re making something kind and serious for families,
+        <a class="reach" href="mailto:lynnmariebee@gmail.com">I&rsquo;d love to hear about it</a>.
       </p>
     </div>
   </main>
@@ -50,5 +50,7 @@ import Base from '../layouts/Base.astro';
     }
     .prose p { font-size: clamp(1.05rem, 1rem + 0.35vw, 1.15rem); line-height: 1.7; margin: 0 0 1.3rem; max-width: 60ch; color: var(--color-ink); }
     .prose em { font-style: italic; color: var(--color-clay); }
+    .reach { color: var(--color-clay); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .reach:hover { text-decoration-thickness: 2px; }
   </style>
 </Base>
