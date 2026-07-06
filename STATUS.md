@@ -1,6 +1,9 @@
 # Build Status — lynnb.design (resume here)
 
-_Last updated: 2026-07-05 (polish-for-launch session)_
+_Last updated: 2026-07-05 (LAUNCHED)_
+
+## 🚀 LIVE — deployed 2026-07-05
+**https://lynnb.design serves the new Astro site.** Repo: `baxterstrikes/baxterstrikes.github.io` (master). Deploys via GitHub Actions (`.github/workflows/deploy.yml`) on every push to master — `npm run build` (incl. lazy-images postbuild) → Pages artifact. Custom domain + HTTPS cert preserved (note: `PUT /pages` with only `build_type` DROPS the cname — re-set it with both fields if ever touching Pages config again). The 2022 Gatsby build is reachable via the merge's second parent (`61f7bbd`). Old em-dash-era copy: 102 → 5 site-wide (de-slop pass, Lynn-approved). Final pre-launch changes all Lynn's: hero triplet, eyebrow "Designer · Caregiver · Builder", About copy (approved verbatim + mailto), Newsreader display font, real couch-sketching portrait, blended-household line.
 
 ## Launch decision (2026-07-05)
 Lynn: **no new case studies or narration before launch** — polish what exists, then publish. Items 2–5 of the old "what's next" are POST-launch.
