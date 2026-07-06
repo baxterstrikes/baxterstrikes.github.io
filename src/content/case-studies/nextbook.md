@@ -40,7 +40,7 @@ People want motivation to reach their book reading goals.
 
 ### From the previous design to the new
 
-The original primary color read busy and dated. The deeper problem wasn't ours to fix: every screen of a book app is wallpapered in cover art — dozens of palettes and styles nobody chose. The competition all fought the same noise.
+The original primary color read busy and dated. The deeper problem wasn't ours to fix: every screen of a book app is wallpapered in cover art, dozens of palettes and styles nobody chose. The competition all fought the same noise.
 
 ![Original BetterReads design with green UI and mismatched book covers](/assets/nb-01-01.png)
 
@@ -62,7 +62,7 @@ I stayed in low fidelity as long as possible, so testers would react to the inte
 
 ### Book recommendations right at home
 
-My first iteration showed a snapshot of the whole account. Too busy, no center. I cut everything that didn't serve the primary task — find the next book — and borrowed the Netflix pattern: horizontal shelves you scroll sideways.
+My first iteration showed a snapshot of the whole account. Too busy, no center. I cut everything that didn't serve the primary task (find the next book) and borrowed the Netflix pattern: horizontal shelves you scroll sideways.
 
 ![Low-fidelity home page wireframe with recommendation rows and collection grids](/assets/nb-03-01.png)
 
@@ -84,7 +84,7 @@ Users want to know why we are recommending certain books.
 
 I was sure users would want private notes on their books. They didn't. They wanted to sort books into private collections with tags. I'd designed for the reader I imagined instead of the ones in front of me, and the interviews corrected me quickly.
 
-Cutting notes made room to enlarge the cover art — which gives every book details page its own identity, for free.
+Cutting notes made room to enlarge the cover art, which gives every book details page its own identity for free.
 
 ![Book details wireframe with private notes panel and related books](/assets/nb-04-01.png)
 
@@ -100,11 +100,11 @@ Users want relevant information and literally nothing else.
 
 Related books and recommended books mean the same thing to users.
 
-*To me, "related" is taxonomy — same author, series, universe — and a recommendation model weighs far more than that. To users, both mean "books I might like." The distinction was mine, not theirs, so it stayed out of the interface.*
+*To me, "related" is taxonomy (same author, series, universe) and a recommendation model weighs far more than that. To users, both mean "books I might like." The distinction was mine, not theirs, so it stayed out of the interface.*
 
 ### How do readers want their book collections displayed?
 
-Real covers exposed a navigation problem: the profile page was doing two jobs. I split it — a proper page for collections, a modal for the user profile. Both appear in the final designs below.
+Real covers exposed a navigation problem: the profile page was doing two jobs. I split it into a proper page for collections and a modal for the user profile. Both appear in the final designs below.
 
 ![Collections page iteration showing flat side-by-side cover pairs](/assets/nb-05-01.png)
 
@@ -134,13 +134,13 @@ Moving user details into a modal cost nothing and cleared the collections page.
 
 ### Making collections delightful and practical
 
-The 3D stacks held up in testing — noticeable without hijacking the page.
+The 3D stacks held up in testing: noticeable without hijacking the page.
 
 ![Final collections page with 3D book stacks and genre list](/assets/nb-08-01.png)
 
 ### Book details & enabling users to add books to private collections
 
-Any book, added to any collection. The tag-style controls were the users' idea — a pattern they already knew, doing what they expected.
+Any book, added to any collection. The tag-style controls were the users' idea, a pattern they already knew, doing what they expected.
 
 ![Final book details page with large cover, rating, and collection tags](/assets/nb-09-01.png)
 
@@ -150,7 +150,7 @@ My first desktop-only project, and my first lesson in what working alone actuall
 
 ### How to break my tendency to design myself into a box I can’t get out of.
 
-I expected solo work to be faster. It wasn't. Alone, I went too deep too early, stalled at every fork, and flattened creatively — no one to argue with, no argument to sharpen against. Collaboration is the process, and that includes other designers, not just your developers.
+I expected solo work to be faster. It wasn't. Alone, I went too deep too early, stalled at every fork, and flattened creatively: no one to argue with, no argument to sharpen against. Collaboration is the process, and that includes other designers, not just your developers.
 
 ### Don’t get spooked by a due date.
 

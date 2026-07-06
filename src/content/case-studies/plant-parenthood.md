@@ -28,7 +28,7 @@ Track each plant's needs, so survival doesn't depend on memory.
 
 ## Do people actually want their plants to thrive?
 
-The right first question — a plant-care app is only worth building if the answer is complicated. So before designing anything, I asked.
+The right first question: a plant-care app is only worth building if the answer is complicated. So before designing anything, I asked.
 
 ### Questions I asked potential users
 
@@ -41,11 +41,11 @@ The right first question — a plant-care app is only worth building if the answ
 
 Plant owners care for their plants based on intuition rather than knowledge.
 
-*2 of the 3 people I spoke to never looked up how to care for their plants. Trial and error — mostly error.*
+*2 of the 3 people I spoke to never looked up how to care for their plants. Trial and error, mostly error.*
 
 There is not a big incentive to making sure your plants stay alive.
 
-*Everyone said the same thing: if a plant dies, buy another. No guilt, a $12 replacement. So the app couldn't run on obligation — it had to be easy and genuinely pleasant, or nothing.*
+*Everyone said the same thing: if a plant dies, buy another. No guilt, a $12 replacement. So the app couldn't run on obligation. It had to be easy and genuinely pleasant, or nothing.*
 
 
 ## Building something for people who want plants
@@ -66,7 +66,7 @@ Reminders read as help or as nagging, and people delete naggers without remorse.
 
 ### Poor communication causes confusion
 
-Plants die by committee — watered twice on Monday, then not for three weeks, everyone assuming someone else had it.
+Plants die by committee: watered twice on Monday, then not for three weeks, everyone assuming someone else had it.
 
 *Can one shared record fix what is really a household problem?*
 
@@ -76,7 +76,7 @@ The research pulled somewhere the project brief didn't go. I trimmed the feature
 
 ### Getting creative with possible layouts
 
-Fast, wide sketching first — something resembling crazy 8s. Cheap ideas before expensive ones.
+Fast, wide sketching first, something resembling crazy 8s. Cheap ideas before expensive ones.
 
 ![Ten hand-drawn sketches exploring layouts for the plant profile and home page](/assets/pp-01-01.png)
 
@@ -118,7 +118,7 @@ Low-fidelity testing had 3 questions. Does onboarding gather enough to avoid an 
 
 ### Showing relevant plant details in the plant profile
 
-Each plant's happiness and maintenance levels drive its notifications — so a reminder is about this plant's needs, not a schedule.
+Each plant's happiness and maintenance levels drive its notifications, so a reminder is about this plant's needs, not a schedule.
 
 ![Final plant profile showing an unhappy face selected on the happiness scale](/assets/pp-03-01.png)
 
@@ -128,7 +128,7 @@ Each plant's happiness and maintenance levels drive its notifications — so a r
 
 ### Showcasing & adding plants
 
-The home page is a photo grid — plants are the point. Sorting (last watered, happiness, name) does the work underneath.
+The home page is a photo grid, because plants are the point. Sorting (last watered, happiness, name) does the work underneath.
 
 ![Home page listing all plants as a photo grid with names and an add plant button](/assets/pp-04-01.png)
 
@@ -138,7 +138,7 @@ The home page is a photo grid — plants are the point. Sorting (last watered, h
 
 ### Editing both the plant & user profiles
 
-Everything the user tells the app is revisable — the plant's name, species, photo, or the plant itself. And since onboarding lets you skip, the profile stays fully editable later. A skipped step is a postponed decision, not a locked door.
+Everything the user tells the app is revisable: the plant's name, species, photo, or the plant itself. And since onboarding lets you skip, the profile stays fully editable later. A skipped step is a postponed decision, not a locked door.
 
 ![Edit plant screen with photo update, name and species fields, and delete option](/assets/pp-05-01.png)
 
@@ -170,4 +170,4 @@ Research replaced my idea rather than refining it. The criticism was useful and 
 
 ### Adapting to restrictions and limitations.
 
-Most of my research-fed feature ideas fell outside the scope. That happens constantly in real product work — new information arrives without notice and redirects everything. Stay flexible enough that the change improves the work instead of shrinking it.
+Most of my research-fed feature ideas fell outside the scope. That happens constantly in real product work: new information arrives without notice and redirects everything. Stay flexible enough that the change improves the work instead of shrinking it.

@@ -38,7 +38,7 @@ We anchored on Earth911 early. Their API covers, for any item in any ZIP code, w
 
 ### Analyzing the current competition
 
-The existing tools had the data and buried it — cluttered, unexplained, years out of date. Good information, hard to want.
+The existing tools had the data and buried it: cluttered, unexplained, years out of date. Good information, hard to want.
 
 ![Competitor search screen listing plastic recycling results in a plain text list](/assets/tp-01-01.png)
 
@@ -68,7 +68,7 @@ So we designed for the miss: camera first, keyword and category search right beh
 
 ## Continuously asking what works
 
-This was my first time pair-designing. We disagreed often, and with 8 weeks on the clock we couldn't afford to stay stuck — so we made rules for disagreeing.
+This was my first time pair-designing. We disagreed often, and with 8 weeks on the clock we couldn't afford to stay stuck, so we made rules for disagreeing.
 
 ### We both learned some important lessons during our collaboration
 
@@ -78,7 +78,7 @@ This was my first time pair-designing. We disagreed often, and with 8 weeks on t
 
 ### Home page progression
 
-We started unsure whether to lead with image recognition or category search. The answer was neither: keep the page spare and offer all 3 paths — camera, keyword, category. The final designs below show where that landed.
+We started unsure whether to lead with image recognition or category search. The answer was neither: keep the page spare and offer all 3 paths, camera, keyword, and category. The final designs below show where that landed.
 
 ![Early home page wireframe stacking a camera option above two search-by-term blocks](/assets/tp-03-01.png)
 
@@ -104,7 +104,7 @@ The open question was photos versus icons for items and materials. Testing settl
 
 ### Progression of camera & results 
 
-The flow stayed simple — take a picture, get a result — but it took close work with the data science team. We couldn't promise the model would learn from corrections, or that a retake would change the verdict. The design had to be honest about what the model didn't know.
+The flow stayed simple (take a picture, get a result) but it took close work with the data science team. We couldn't promise the model would learn from corrections, or that a retake would change the verdict. The design had to be honest about what the model didn't know.
 
 ![Camera wireframe telling users to center the item and clear the area before capture](/assets/tp-06-01.png)
 
@@ -140,7 +140,7 @@ Users love being able to visually identify items during category search.
 
 Users want more information at their fingertips.
 
-*People asked for more — what the material is, why it resists recycling, who's working on that. One good answer creates appetite for the next.*
+*People asked for more: what the material is, why it resists recycling, who's working on that. One good answer creates appetite for the next.*
 
 ## Final designs
 
@@ -158,7 +158,7 @@ Onboarding needed location and camera access. Each screen explains what the perm
 
 ### A camera feature that helps users identify recyclables
 
-After processing, the result slides up as a card — minimal, legible, tappable for the full detail.
+After processing, the result slides up as a card: minimal, legible, tappable for the full detail.
 
 ![Final camera screen with a centering tip over batteries held in an open hand](/assets/tp-10-01.png)
 
@@ -178,7 +178,7 @@ The photos carried this flow. Users said so, unprompted.
 
 ### Item information pages with proper visual hierarchy
 
-Each item page answers two questions at a glance: what is this, and what do I do with it. The single call to action — locate a recycling center — is the point of the app, so nothing competes with it.
+Each item page answers two questions at a glance: what is this, and what do I do with it. The single call to action, locate a recycling center, is the point of the app, so nothing competes with it.
 
 ![Alkaline battery information page with off-site recycle graphic and locate centers button](/assets/tp-12-01.png)
 
@@ -192,7 +192,7 @@ This was my first real collaboration across disciplines. Three lessons stuck.
 
 ### Collaboration between disciplines
 
-Working alongside data science and engineering taught me to explain design reasoning in terms others can act on — and to translate their constraints back into design. Fluency in both directions is the job.
+Working alongside data science and engineering taught me to explain design reasoning in terms others can act on, and to translate their constraints back into design. Fluency in both directions is the job.
 
 ### Understanding limitations
 
