@@ -17,6 +17,16 @@ Lynn: **no new case studies or narration before launch** — polish what exists,
 - Known/accepted: `heading-order` Lighthouse flag from the h3 opener blocks (Problem space / Solution / Project details) — house style, left alone.
 - Flagged for Lynn: tp-11-03 and tp-12-01 are the same screenshot; tp-05-03 sits oddly under the category-search heading.
 
+## Voice + design session (2026-07-05, same day, later)
+- **Tone pivot (Lynn's call):** ALL case studies + blurbs rewritten to *elegant minimal utility* — she judged the June maximalist copy "slop," including approved Kiddex/Apocrypha. Wit ≈1 dry beat/page. Calibration samples + full rules in the [[lynn-voice-profile]] memory.
+- **Hero (Lynn's own, final):** "Biologist by training, facilities by trade, designer by mutation. I work in that liminal space where adults and children are thrown together to grow into a family."
+- **About: rewritten 3× until landed.** Memoir → minimal (="sterile") → warm-slots (="botlike") → **person-talking draft, APPROVED verbatim.** Closes with a mailto (lynnmariebee@gmail.com — she okayed publishing it). Facts re-verified against `~/Touchstone/Dossiers/Self/Employment History.md`.
+- **Eyebrow:** "Designer · Caregiver · Builder" (hers). Tab title: "Lynn Baxter — Designer".
+- **Fonts:** Fraunces (wonk complaints — it has a literal WONK axis) → **Newsreader Variable** (opsz) display; Inter stays body.
+- **About photo:** real couch-sketching photo (`portrait-sketching.jpg`, from her PXL download, gentle crop, 220px rounded rect).
+- **Kiddex origin line generalized for privacy** (son, "several allergies" — no allergen list).
+- /flavor lens auditioned well (caught AI tells: antithesis density, recycled metaphors, internet idioms) — **not yet a mandatory gate**, Lynn evaluating.
+
 ## Deploy target (confirmed 2026-07-05)
 lynnb.design is **GitHub Pages** — CNAME → `baxterstrikes.github.io`, serving the July-2022 build. Cutover = push new `dist` to that Pages setup (ideally via Actions workflow building from the Portfolio repo); **no DNS change needed**. Awaiting Lynn's go + repo location/access.
 
