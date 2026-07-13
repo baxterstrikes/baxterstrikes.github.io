@@ -1,0 +1,114 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const studies = (await getCollection('caseStudies')).filter((s) => !s.data.draft);
+
+// Group work by maturity: live apps first, then works in progress, then coursework.
+const GROUPS = [
+  { key: 'live', label: 'Live apps' },
+  { key: 'wip', label: 'In progress' },
+  { key: 'coursework', label: 'Coursework' },
+];
+const byOrder = (a, b) => (a.data.order ?? 99) - (b.data.order ?? 99);
+const grouped = GROUPS
+  .map((g) => ({ ...g, items: studies.filter((s) => s.data.category === g.key).sort(byOrder) }))
+  .filter((g) => g.items.length > 0);
+
+// Don't silently drop a study that's missing/has an unknown category.
+const known = new Set(GROUPS.map((g) => g.key));
+const leftover = studies.filter((s) => !known.has(s.data.category ?? ''));
+if (leftover.length) grouped.push({ key: 'more', label: 'More', items: leftover });
+---
+
+<Base title="Work — Lynn Baxter">
+  <main class="container home">
+    <header class="intro">
+      <div class="intro-text">
+        <p class="eyebrow">Designer · Caregiver · Builder</p>
+        <h1>Lynn Baxter</h1>
+        <p class="lede">
+          Biologist by training, facilities by trade, designer by mutation. I work
+          in that liminal space where adults and children are thrown together to
+          grow into a family.
+        </p>
+      </div>
+      <img class="portrait" src="/assets/portrait-sketching.jpg" alt="Lynn Baxter sketching on a tablet from the corner of a grey couch" width="220" height="293" />
+    </header>
+
+    {grouped.map((g) => (
+      <section class="work-group">
+        <p class="section-label">{g.label}</p>
+        <ul class="work">
+          {g.items.map((s) => (
+            <li>
+              <a href={`/work/${s.id}`}>
+                <h2>{s.data.title}</h2>
+                <p class="blurb">{s.data.description}</p>
+                <span class="go">View case study →</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </main>
+
+  <style>
+    .home { padding-block: clamp(3rem, 9vw, 5rem) clamp(4rem, 11vw, 6rem); }
+    .intro {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: clamp(1.5rem, 5vw, 3.5rem);
+      margin-bottom: var(--space-5);
+    }
+    .intro-text { flex: 1 1 24rem; min-width: 0; }
+    h1 { font-size: var(--step-4); margin: 0.5rem 0 1.25rem; }
+    .portrait { flex: 0 0 auto; width: clamp(160px, 24vw, 220px); height: auto; border-radius: var(--radius); margin-top: 0.4rem; }
+    .lede {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: clamp(1.2rem, 1.05rem + 0.85vw, 1.5rem);
+      line-height: 1.5;
+      color: var(--color-ink-soft);
+      max-width: 36ch;
+      margin: 0;
+    }
+    @media (max-width: 560px) {
+      .intro { flex-direction: column; }
+      /* flex-basis would become a height in column direction */
+      .intro-text { flex: 0 0 auto; }
+      .portrait { margin-top: 0; }
+    }
+    .work-group + .work-group { margin-top: clamp(2.75rem, 7vw, 4rem); }
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: var(--step--1);
+      font-weight: 600;
+      color: var(--color-muted);
+      border-bottom: 1px solid var(--color-line);
+      padding-bottom: 0.75rem;
+      margin: 0 0 0.25rem;
+    }
+    .work { list-style: none; padding: 0; margin: 0; }
+    .work li a {
+      display: block;
+      text-decoration: none;
+      padding: 1.6rem 0;
+      border-bottom: 1px solid var(--color-line);
+    }
+    .work h2 { font-size: var(--step-2); margin: 0 0 0.2rem; transition: color 0.15s; }
+    .blurb { color: var(--color-muted); margin: 0 0 0.5rem; }
+    .go {
+      font-size: 0.85rem;
+      color: var(--color-clay);
+      font-weight: 500;
+      opacity: 0;
+      transition: opacity 0.15s;
+    }
+    .work li a:hover h2 { color: var(--color-clay); }
+    .work li a:hover .go { opacity: 1; }
+  </style>
+</Base>
